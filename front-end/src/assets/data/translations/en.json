@@ -1,0 +1,10 @@
+{
+    "page": {
+        "register": {
+            "title": "Register",
+            "username": "Username",
+            "email": "E-mail",
+            "password": "Password"
+        }
+    }
+}
