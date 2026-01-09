@@ -1,0 +1,28 @@
+{
+  "page": {
+    "account": {
+      "register": {
+        "title": "Register",
+        "description_1": "Please fill all the datas below",
+        "username": "Username",
+        "email": "Email",
+        "password": "Password",
+        "forgot_password": "Forgot Password?",
+        "description_2": "Already have an account?",
+        "login": "Login",
+        "submit": "Register"
+      },
+      "login": {
+        "title": "Login",
+        "description_1": "Please fill all the datas below",
+        "username": "Username",
+        "email": "Email",
+        "password": "Password",
+        "forgot_password": "Forgot Password?",
+        "description_2": "Don't have an account?",
+        "register": "Register",
+        "submit": "Login"
+      }
+    }
+  }
+}

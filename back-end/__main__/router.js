@@ -11,6 +11,17 @@ router.get("/", (_, res) =>
     })
 );
 
+router.get("/user", (_, res) =>
+    res.status(200).json({
+        success: 1,
+        message: "Server Listening",
+        channel: "user",
+        path: "/user",
+        code: 200,
+        comment: "testing GET response",
+    })
+);
+
 router.post("/", (req, res) =>
     res.status(200).json({
         success: 1,

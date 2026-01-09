@@ -68,6 +68,10 @@ const login = async (req, res) => {
             user = await User.findOne({ email });
         }
 
+        if(!user) {
+            return res.status(404).json({success:0, message: 'User not found', code: 404})
+        }
+
         user = user.toObject();
 
         const isMatched = await require("bcrypt").compare(
