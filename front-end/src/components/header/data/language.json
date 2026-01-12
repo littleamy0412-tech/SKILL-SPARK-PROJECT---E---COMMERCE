@@ -1,0 +1,154 @@
+[
+  {
+    "name": "English (English)",
+    "loc": "en"
+  },
+  {
+    "name": "Spanish (Español)",
+    "loc": "es"
+  },
+  {
+    "name": "French (Français)",
+    "loc": "fr"
+  },
+  {
+    "name": "German (Deutsch)",
+    "loc": "de"
+  },
+  {
+    "name": "Chinese (Simplified) (简体中文)",
+    "loc": "zh-CN"
+  },
+  {
+    "name": "Chinese (Traditional) (繁體中文)",
+    "loc": "zh-TW"
+  },
+  {
+    "name": "Japanese (日本語)",
+    "loc": "ja"
+  },
+  {
+    "name": "Korean (한국어)",
+    "loc": "ko"
+  },
+  {
+    "name": "Arabic (العربية)",
+    "loc": "ar"
+  },
+  {
+    "name": "Russian (Русский)",
+    "loc": "ru"
+  },
+  {
+    "name": "Portuguese (Português)",
+    "loc": "pt"
+  },
+  {
+    "name": "Italian (Italiano)",
+    "loc": "it"
+  },
+  {
+    "name": "Dutch (Nederlands)",
+    "loc": "nl"
+  },
+  {
+    "name": "Hindi (हिन्दी)",
+    "loc": "hi"
+  },
+  {
+    "name": "Turkish (Türkçe)",
+    "loc": "tr"
+  },
+  {
+    "name": "Polish (Polski)",
+    "loc": "pl"
+  },
+  {
+    "name": "Vietnamese (Tiếng Việt)",
+    "loc": "vi"
+  },
+  {
+    "name": "Thai (ไทย)",
+    "loc": "th"
+  },
+  {
+    "name": "Indonesian (Bahasa Indonesia)",
+    "loc": "id"
+  },
+  {
+    "name": "Swedish (Svenska)",
+    "loc": "sv"
+  },
+  {
+    "name": "Danish (Dansk)",
+    "loc": "da"
+  },
+  {
+    "name": "Norwegian (Norsk)",
+    "loc": "no"
+  },
+  {
+    "name": "Finnish (Suomi)",
+    "loc": "fi"
+  },
+  {
+    "name": "Greek (Ελληνικά)",
+    "loc": "el"
+  },
+  {
+    "name": "Hebrew (עברית)",
+    "loc": "he"
+  },
+  {
+    "name": "Czech (Čeština)",
+    "loc": "cs"
+  },
+  {
+    "name": "Romanian (Română)",
+    "loc": "ro"
+  },
+  {
+    "name": "Hungarian (Magyar)",
+    "loc": "hu"
+  },
+  {
+    "name": "Ukrainian (Українська)",
+    "loc": "uk"
+  },
+  {
+    "name": "Bulgarian (Български)",
+    "loc": "bg"
+  },
+  {
+    "name": "Croatian (Hrvatski)",
+    "loc": "hr"
+  },
+  {
+    "name": "Slovak (Slovenčina)",
+    "loc": "sk"
+  },
+  {
+    "name": "Slovenian (Slovenščina)",
+    "loc": "sl"
+  },
+  {
+    "name": "Serbian (Српски)",
+    "loc": "sr"
+  },
+  {
+    "name": "Farsi/Persian (فارسی)",
+    "loc": "fa"
+  },
+  {
+    "name": "Bengali (বাংলা)",
+    "loc": "bn"
+  },
+  {
+    "name": "Malay (Bahasa Melayu)",
+    "loc": "ms"
+  },
+  {
+    "name": "Swahili (Kiswahili)",
+    "loc": "sw"
+  }
+]

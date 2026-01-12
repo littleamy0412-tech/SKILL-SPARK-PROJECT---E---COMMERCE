@@ -3,3 +3,9 @@
 body {
     /* @apply bg-black text-white; */
 }
+
+#imager091992u3 {
+    background: url('/backgrounds/background1.jpeg');
+    background-position: center;
+    background-size: cover;
+}
