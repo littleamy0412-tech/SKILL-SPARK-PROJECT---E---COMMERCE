@@ -6,13 +6,15 @@ import { HiOutlineSwitchHorizontal } from "react-icons/hi";
 import { IoPersonSharp } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { useNavigate } from "react-router";
+import { useAuth } from "../datas/Authentications";
 
 const POST_LOGIN = (data) =>
   new Promise(async (resolve, reject) => {
     try {
+      console.clear();
+      console.log(data);
       const { username, email, password } = data;
       const result = { password };
-
       if (username) result.username = username;
       else if (email) result.email = email;
 
@@ -20,7 +22,7 @@ const POST_LOGIN = (data) =>
         reject({
           success: 0,
           code: 400,
-          message: "Username or Email required.",
+          message: "Username or Email required",
         });
       }
 
@@ -33,9 +35,11 @@ const POST_LOGIN = (data) =>
       });
 
       const res = await response.json();
-      
+      if (res.code === 404) reject(res);
+      if (!res.success) reject({ ...res, code: 400 });
+      resolve(res);
     } catch (err) {
-      reject({ success: 0, message: "Internal Server Error", err });
+      reject({ success: 0, code: 500, message: "Internal Server Error", err });
     }
   });
 
@@ -46,6 +50,8 @@ function Login() {
   const put = (value) => t(`page.account.login.${value}`);
   const [isUsername, setIsUsername] = useState(true);
 
+  const { __, setToken, toggleLog, saveState } = useAuth();
+
   const {
     register,
     handleSubmit,
@@ -53,7 +59,27 @@ function Login() {
     formState: { errors },
   } = useForm({ username: "", email: "", password: "" });
 
-  const onSubmit = (data) => {};
+  const onSubmit = (data) =>
+    POST_LOGIN(data)
+      .then((report) => {
+        toast.success(report.message);
+        setToken(report.token);
+        toggleLog(true);
+        saveState();
+        reset({ username: "", email: "", password: "" });
+        setTimeout(() => navigate("/account"), 2000);
+      })
+      .catch((err) => {
+        switch (err.code) {
+          case 400:
+          case 404:
+            toast.warning(err.message);
+            break;
+          case 500:
+            console.log(err);
+            toast.error(err.message);
+        }
+      });
 
   return (
     <>

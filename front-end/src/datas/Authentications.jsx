@@ -3,31 +3,39 @@ import { createContext, useContext, useEffect, useState } from "react";
 const AuthC = createContext();
 
 export default function AUTHENTICATE({ children }) {
-  const [__, setConf] = useState({
-    __log: false,
-    __t: undefined,
-  });
+  const [token, setToken] = useState(undefined);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    const saved = localStorage.getItem("__");
-    if (saved) setConf(JSON.parse(saved));
+    try {
+      setToken(JSON.parse(localStorage.getItem("token")));
+    } catch {
+      setToken((prev) => prev);
+    }
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("__", JSON.stringify(__));
-  }, [__]);
+    try {
+      setIsLoggedIn(JSON.parse(localStorage.getItem("isLoggedIn")));
+    } catch {
+      setIsLoggedIn((prev) => prev);
+    }
+  }, []);
 
-  const setToken = (token) => {
-    setConf((prev) => ({ ...prev, __t: token || undefined }));
-  };
-  const toggleLog = (value) => {
-    setConf((prev) => ({ ...prev, __log: value || false }));
-  };
+  useEffect(() => {
+    localStorage.setItem("token", token);
+  }, [token]);
+
+  useEffect(() => {
+    localStorage.setItem("isLoggedIn", isLoggedIn);
+  }, [isLoggedIn]);
 
   return (
-    <AuthC.Provider value={{ __, setToken, toggleLog }}>
-      {children}
-    </AuthC.Provider>
+    <>
+      <AuthC.Provider value={{ token, setToken, isLoggedIn, setIsLoggedIn }}>
+        {children}
+      </AuthC.Provider>
+    </>
   );
 }
 

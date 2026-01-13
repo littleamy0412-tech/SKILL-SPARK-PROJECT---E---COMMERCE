@@ -1,24 +1,27 @@
 import { createContext, useContext, useEffect, useState } from "react";
 
-const User = createContext();
+const UserCont = createContext();
 
 export default function USERDATA({ children }) {
-  const [user, setUser] = useState({});
+  const [userData, setUserData] = useState({});
 
   useEffect(() => {
-    const saved = localStorage.getItem("__u");
-    if (saved && saved != ({})) setUser(JSON.parse(saved));
+    try {
+      setUserData(JSON.parse(localStorage.getItem("user_data")));
+    } catch {
+      setUserData((prev) => prev);
+    }
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("__u", user);
-  }, [user]);
+    localStorage.setItem("user_data", JSON.stringify(userData));
+  }, [userData]);
 
   return (
     <>
-      <User.Provider value={{ user, setUser }}>{children}</User.Provider>
+      <UserCont value={{ userData, setUserData }}>{children}</UserCont>
     </>
   );
 }
 
-export const useUser = () => useContext(User);
+export const useUser = () => useContext(UserCont);
