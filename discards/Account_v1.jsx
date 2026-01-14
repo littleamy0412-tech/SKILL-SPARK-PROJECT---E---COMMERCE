@@ -46,7 +46,7 @@ function Account() {
       })
       .catch((err) => {
         if (err.code === 400) {
-          navigate("/account/login");
+          navigate("/login");
         }
         toast.error(err.message);
       });

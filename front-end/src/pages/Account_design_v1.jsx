@@ -1,9 +1,8 @@
+import { Navigate, useNavigate } from "react-router";
 import default_pic from "/default.png";
-import { useNavigate } from "react-router";
-import { useAuth } from "../front-end/src/datas/Authentications";
 import { toast, Toaster } from "sonner";
-import { useEffect, useState } from "react";
-import { useUser } from "../front-end/src/datas/User_data";
+import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const POST_GET = (token) => {
   return new Promise(async (resolve, reject) => {
@@ -35,28 +34,44 @@ const POST_GET = (token) => {
 };
 
 function Account() {
-  const { __ } = useAuth();
+  const { t } = useTranslation();
+
+  function put(value) {
+    return t(`page.account.${value}`);
+  }
+
+  function putInfo(value) {
+    return t(`page.account.info.${value}`);
+  }
 
   const navigate = useNavigate();
+  let user;
+  try {
+    user = JSON.parse(localStorage.getItem("user")) || { details: null };
+  } catch {
+    user = { details: null };
+  }
 
-  const { user, setUser } = useUser();
+  const token = localStorage.getItem("token");
+
+  if (!token) return <Navigate to={"/login"} />;
 
   useEffect(() => {
     console.clear();
-    console.log(user);
-    console.log(__)
-    if (!__.__t) {
-      toast.error("No token specified. Invalid credentials.");
-      return;
-    }
-    POST_GET(__.__t)
+    POST_GET(token)
       .then((res) => {
-        setUser(() => (res.data ? res.data : {}));
-        toast.success(res.message);
+        if (res.data) {
+          user = { ...res.data };
+          toast.success(res.message);
+          localStorage.setItem("user", JSON.stringify(user));
+        }
       })
       .catch((err) => {
-        // if (err.code === 400) navigate("/login");
-        toast.error(err.message);
+        if (err.code === 400) navigate("/login");
+        else toast.error(err.message);
+      })
+      .finally(() => {
+        console.log(user);
       });
   }, []);
 
@@ -79,28 +94,28 @@ function Account() {
               </div>
               <div className="flex justify-center items-center min-h-[50px]">
                 <button className="bg-pink-400 text-white font-bold rounded cursor-pointer px-5 py-2 hover:bg-pink-500 transition duration-200">
-                  Change Picture
+                  {put("change_picture")}
                 </button>
               </div>
             </div>
             <div className="border border-white shadow-lg bg-[rgba(200,200,200,.3)] backdrop-blur-sm min-h-[200px] border-b-6 flex flex-col text-[14px] pb-3">
               <h1 className="font-bold text-[18px] px-10 pt-3 pb-2 border-b">
-                Address:
+                {put("address")}:
               </h1>
               <div className="flex justify-between px-10 py-3">
-                <span className="font-bold">Country:</span>
+                <span className="font-bold">{put("country")}:</span>
                 {user.details?.address?.country || ""}
               </div>
               <div className="flex justify-between px-10 py-3">
-                <span className="font-bold">City:</span>
+                <span className="font-bold">{put("city")}:</span>
                 {user.details?.address?.city || ""}
               </div>
               <div className="flex justify-between px-10 py-3">
-                <span className="font-bold">Street:</span>
+                <span className="font-bold">{put("street")}:</span>
                 {user.details?.address?.street || ""}
               </div>
               <div className="flex justify-between px-10 py-3">
-                <span className="font-bold">ZipCode:</span>
+                <span className="font-bold">{put("zip_code")}:</span>
                 {user.details?.address?.zipCode || ""}
               </div>
             </div>
@@ -110,22 +125,24 @@ function Account() {
               id="title"
               className="border border-white shadow-lg bg-[rgba(0,0,0,.3)] text-white backdrop-blur-sm px-10 py-2 border-b-6 font-bold"
             >
-              Account Info:
+              {put("account_info")}:
             </div>
             <div className="border border-white shadow-lg bg-[rgba(200,200,200,.3)] backdrop-blur-sm  border-b-6 flex items-center justify-between px-10 py-2 min-h-[50px]">
-              <span className="font-bold">Full Name:</span>{" "}
+              <span className="font-bold">{putInfo("full_name")}:</span>{" "}
               {user.details?.fullName || ""}
             </div>
             <div className="border border-white shadow-lg bg-[rgba(200,200,200,.3)] backdrop-blur-sm  border-b-6 flex items-center justify-between px-10 py-2 min-h-[50px]">
-              <span className="font-bold">Email:</span> {user.email || ""}
+              <span className="font-bold">{putInfo("email")}:</span>{" "}
+              {user.email || ""}
             </div>
             <div className="border border-white shadow-lg bg-[rgba(0,0,0,.3)] text-white backdrop-blur-sm  border-b-6 flex gap-5 px-10 py-5 flex-1">
-              <span className="font-bold">Bio:</span> {user.details?.bio || ""}
+              <span className="font-bold">{putInfo("bio")}:</span>{" "}
+              {user.details?.bio || ""}
             </div>
             <div className="border border-white shadow-lg bg-[rgba(200,200,200,.3)] backdrop-blur-sm  border-b-6 flex items-center justify-between px-10 py-2 min-h-[50px]">
-              <span className="font-bold">Edit Bio</span>{" "}
+              <span className="font-bold">{putInfo("edit_bio")}</span>{" "}
               <button className="bg-pink-400 text-white px-6 py-2 rounded font-bold cursor-pointer hover:bg-pink-500 transition duration-200">
-                Edit
+                {putInfo("edit")}
               </button>
             </div>
           </div>

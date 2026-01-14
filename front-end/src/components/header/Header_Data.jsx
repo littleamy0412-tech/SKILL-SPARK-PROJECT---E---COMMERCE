@@ -4,35 +4,43 @@ import currency from "./data/currency.json";
 import { IoMdPerson } from "react-icons/io";
 import { FaHeart, FaRegHeart } from "react-icons/fa";
 import { BsCart, BsCartFill } from "react-icons/bs";
+import { BiSearch } from "react-icons/bi";
+
+import logo from '/logo.png'
 
 class Button {
-  constructor(_id, text, icon_p, icon_s = "", hide = false) {
+  constructor(_id, text, icon_p, icon_s = "", img = false) {
     this._id = _id;
     this.text = text;
     this.icon_p = icon_p;
     this.icon_s = icon_s;
-    this.hide = hide;
+    this.img = img
   }
 }
 
-export default function () {
+export default function Header_Data() {
   return {
     top: {
       select: [
         {
           _id: "language",
-          content: JSON.parse(language),
+          content: language,
         },
         {
           _id: "currency",
-          content: JSON.parse(currency),
+          content: currency,
         },
       ],
       button: [
         new Button("login-btnPopup", "login", <IoMdPerson />),
+        new Button("account-btn", '', '', '', true),
         new Button("wishlist-btn", "wishlist", <FaRegHeart />, <FaHeart />),
         new Button("cart-btn", "", <BsCart />, <BsCartFill />),
       ],
     },
+    bottom: {
+      logo,
+      nav: 'home pages blog shop contact about_us'.split(" ")
+    }
   };
 }

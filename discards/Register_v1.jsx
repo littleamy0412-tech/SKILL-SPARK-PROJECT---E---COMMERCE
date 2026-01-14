@@ -207,7 +207,7 @@ function Register() {
           <p className="text-center">
             {put("description_2")}{" "}
             <span
-              onClick={() => navigate("/account/login")}
+              onClick={() => navigate("/login")}
               className="font-bold text-pink-500 transition duration-200 hover:text-pink-400 cursor-pointer"
             >
               {put("login")}

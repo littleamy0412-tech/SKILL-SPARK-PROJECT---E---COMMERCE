@@ -1,0 +1,50 @@
+{
+  "header": {
+    "top": {
+      "undefined": "未定義",
+      "not_setted": "未設定",
+      "login": "登入",
+      "wishlist": "願望清單"
+    }
+  },
+  "page": {
+    "account": {
+      "change_picture": "更換頭像",
+      "address": "地址",
+      "country": "國家",
+      "city": "城市",
+      "street": "街道",
+      "zip_code": "郵遞區號",
+      "account_info": "帳戶資訊",
+      "info": {
+        "full_name": "全名",
+        "email": "電子郵件",
+        "bio": "個人簡介",
+        "edit_bio": "編輯簡介",
+        "edit": "編輯"
+      },
+      "register": {
+        "title": "註冊",
+        "description_1": "請填寫以下所有資料",
+        "username": "使用者名稱",
+        "email": "電子郵件",
+        "password": "密碼",
+        "forgot_password": "忘記密碼？",
+        "description_2": "已經有帳戶了？",
+        "login": "登入",
+        "submit": "註冊"
+      },
+      "login": {
+        "title": "登入",
+        "description_1": "請填寫以下所有資料",
+        "username": "使用者名稱",
+        "email": "電子郵件",
+        "password": "密碼",
+        "forgot_password": "忘記密碼？",
+        "description_2": "還沒有帳戶？",
+        "register": "註冊",
+        "submit": "登入"
+      }
+    }
+  }
+}

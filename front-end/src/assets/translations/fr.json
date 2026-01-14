@@ -1,0 +1,50 @@
+{
+  "header": {
+    "top": {
+      "undefined": "Indéfini",
+      "not_setted": "Non défini",
+      "login": "Connexion",
+      "wishlist": "Liste de souhaits"
+    }
+  },
+  "page": {
+    "account": {
+      "change_picture": "Changer la photo",
+      "address": "Adresse",
+      "country": "Pays",
+      "city": "Ville",
+      "street": "Rue",
+      "zip_code": "Code postal",
+      "account_info": "Informations du compte",
+      "info": {
+        "full_name": "Nom complet",
+        "email": "E-mail",
+        "bio": "Biographie",
+        "edit_bio": "Modifier la biographie",
+        "edit": "Modifier"
+      },
+      "register": {
+        "title": "Inscription",
+        "description_1": "Veuillez remplir toutes les informations ci-dessous",
+        "username": "Nom d'utilisateur",
+        "email": "E-mail",
+        "password": "Mot de passe",
+        "forgot_password": "Mot de passe oublié ?",
+        "description_2": "Vous avez déjà un compte ?",
+        "login": "Connexion",
+        "submit": "S'inscrire"
+      },
+      "login": {
+        "title": "Connexion",
+        "description_1": "Veuillez remplir toutes les informations ci-dessous",
+        "username": "Nom d'utilisateur",
+        "email": "E-mail",
+        "password": "Mot de passe",
+        "forgot_password": "Mot de passe oublié ?",
+        "description_2": "Vous n'avez pas de compte ?",
+        "register": "S'inscrire",
+        "submit": "Se connecter"
+      }
+    }
+  }
+}

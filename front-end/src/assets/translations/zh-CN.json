@@ -1,0 +1,50 @@
+{
+  "header": {
+    "top": {
+      "undefined": "未定义",
+      "not_setted": "未设置",
+      "login": "登录",
+      "wishlist": "心愿单"
+    }
+  },
+  "page": {
+    "account": {
+      "change_picture": "更换头像",
+      "address": "地址",
+      "country": "国家",
+      "city": "城市",
+      "street": "街道",
+      "zip_code": "邮政编码",
+      "account_info": "账户信息",
+      "info": {
+        "full_name": "全名",
+        "email": "电子邮箱",
+        "bio": "个人简介",
+        "edit_bio": "编辑简介",
+        "edit": "编辑"
+      },
+      "register": {
+        "title": "注册",
+        "description_1": "请填写以下所有信息",
+        "username": "用户名",
+        "email": "电子邮箱",
+        "password": "密码",
+        "forgot_password": "忘记密码？",
+        "description_2": "已经有账号了？",
+        "login": "登录",
+        "submit": "注册"
+      },
+      "login": {
+        "title": "登录",
+        "description_1": "请填写以下所有信息",
+        "username": "用户名",
+        "email": "电子邮箱",
+        "password": "密码",
+        "forgot_password": "忘记密码？",
+        "description_2": "还没有账号？",
+        "register": "注册",
+        "submit": "登录"
+      }
+    }
+  }
+}

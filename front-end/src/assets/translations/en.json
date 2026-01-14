@@ -1,6 +1,37 @@
 {
+  "bread": {
+    "my_account": "My Account",
+    "loc": {
+      "home": "Home",
+      "pages": "Pages",
+      "my_account": "My Account"
+    }
+  },
+  "header": {
+    "top": {
+      "undefined": "Undefined",
+      "not_setted": "Not setted",
+      "login": "Login",
+      "wishlist": "Wishlist"
+    },
+    "bottom": {}
+  },
   "page": {
     "account": {
+      "change_picture": "Change Picture",
+      "address": "Address",
+      "country": "Country",
+      "city": "City",
+      "street": "Street",
+      "zip_code": "Zip Code",
+      "account_info": "Account Info",
+      "info": {
+        "full_name": "Full Name",
+        "email": "Email",
+        "bio": "Bio",
+        "edit_bio": "Edit Bio",
+        "edit": "Edit"
+      },
       "register": {
         "title": "Register",
         "description_1": "Please fill all the datas below",

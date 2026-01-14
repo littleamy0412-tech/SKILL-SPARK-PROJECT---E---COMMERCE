@@ -1,0 +1,50 @@
+{
+  "header": {
+    "top": {
+      "undefined": "Nicht definiert",
+      "not_setted": "Nicht festgelegt",
+      "login": "Anmelden",
+      "wishlist": "Wunschliste"
+    }
+  },
+  "page": {
+    "account": {
+      "change_picture": "Bild ändern",
+      "address": "Adresse",
+      "country": "Land",
+      "city": "Stadt",
+      "street": "Straße",
+      "zip_code": "Postleitzahl",
+      "account_info": "Kontoinformationen",
+      "info": {
+        "full_name": "Vollständiger Name",
+        "email": "E-Mail",
+        "bio": "Biografie",
+        "edit_bio": "Biografie bearbeiten",
+        "edit": "Bearbeiten"
+      },
+      "register": {
+        "title": "Registrieren",
+        "description_1": "Bitte füllen Sie alle untenstehenden Angaben aus",
+        "username": "Benutzername",
+        "email": "E-Mail",
+        "password": "Passwort",
+        "forgot_password": "Passwort vergessen?",
+        "description_2": "Haben Sie bereits ein Konto?",
+        "login": "Anmelden",
+        "submit": "Registrieren"
+      },
+      "login": {
+        "title": "Anmelden",
+        "description_1": "Bitte füllen Sie alle untenstehenden Angaben aus",
+        "username": "Benutzername",
+        "email": "E-Mail",
+        "password": "Passwort",
+        "forgot_password": "Passwort vergessen?",
+        "description_2": "Sie haben noch kein Konto?",
+        "register": "Registrieren",
+        "submit": "Anmelden"
+      }
+    }
+  }
+}

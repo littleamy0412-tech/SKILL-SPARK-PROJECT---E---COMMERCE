@@ -1,0 +1,50 @@
+{
+  "header": {
+    "top": {
+      "undefined": "未定義",
+      "not_setted": "未設定",
+      "login": "ログイン",
+      "wishlist": "ウィッシュリスト"
+    }
+  },
+  "page": {
+    "account": {
+      "change_picture": "画像を変更",
+      "address": "住所",
+      "country": "国",
+      "city": "市区町村",
+      "street": "番地",
+      "zip_code": "郵便番号",
+      "account_info": "アカウント情報",
+      "info": {
+        "full_name": "氏名",
+        "email": "メールアドレス",
+        "bio": "自己紹介",
+        "edit_bio": "自己紹介を編集",
+        "edit": "編集"
+      },
+      "register": {
+        "title": "登録",
+        "description_1": "以下のすべての項目を入力してください",
+        "username": "ユーザー名",
+        "email": "メールアドレス",
+        "password": "パスワード",
+        "forgot_password": "パスワードを忘れましたか？",
+        "description_2": "すでにアカウントをお持ちですか？",
+        "login": "ログイン",
+        "submit": "登録"
+      },
+      "login": {
+        "title": "ログイン",
+        "description_1": "以下のすべての項目を入力してください",
+        "username": "ユーザー名",
+        "email": "メールアドレス",
+        "password": "パスワード",
+        "forgot_password": "パスワードを忘れましたか？",
+        "description_2": "アカウントをお持ちでないですか？",
+        "register": "登録",
+        "submit": "ログイン"
+      }
+    }
+  }
+}

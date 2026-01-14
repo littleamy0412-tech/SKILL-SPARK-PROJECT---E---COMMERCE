@@ -13,12 +13,11 @@ function App() {
           <Route index element={<Home />} />
           <Route path="account">
             <Route index element={<Account />} />
-            <Route path="login" element={<Login />} />
-            <Route path="register" element={<Register />} />
           </Route>
         </Route>
 
-        
+        <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />} />
       </Routes>
     </>
   );

@@ -85,7 +85,7 @@ function Login() {
       <div className="h-svh flex flex-col justify-center items-center">
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="border border-gray-300 rounded-md shadow-2xl min-h-[600px] w-full max-w-[600px] flex flex-col justify-center px-6 gap-4"
+          className="border border-gray-300 rounded-md shadow-2xl min-h-[600px] w-full max-w-[600px] flex flex-col justify-center px-20 gap-4"
         >
           <h1 className="text-4xl font-bold text-center">{put("title")}</h1>
           <p className="text-center text-sm">{put("description_1")}</p>
