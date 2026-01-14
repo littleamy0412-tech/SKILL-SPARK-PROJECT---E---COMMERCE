@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useAuth } from "../datas/Authentications";
+import { useAuth } from "../front-end/src/datas/Authentications";
 import { useNavigate } from "react-router";
 import default_image from "/default.png";
 import { toast, Toaster } from "sonner";

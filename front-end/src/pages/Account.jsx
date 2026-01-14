@@ -1,9 +1,68 @@
-import { Navigate } from "react-router";
+import { Navigate, useNavigate } from "react-router";
 import default_pic from "/default.png";
 import { toast, Toaster } from "sonner";
+import { useEffect } from "react";
+
+const POST_GET = (token) => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const response = await fetch("/api/user/get", {
+        method: "GET",
+        headers: {
+          authorization: token ? `Bearer ${token}` : "",
+          "content-type": "application/json",
+        },
+      });
+
+      const res = await response.json();
+
+      if (!res.success) reject({ success: 0, message: res.message, code: 400 });
+
+      const { data } = res;
+      delete data._id;
+      delete data.createdAt;
+      delete data.iat;
+
+      res.data = { ...data };
+      resolve(res);
+    } catch (err) {
+      console.log(err);
+      reject({ success: 0, message: "Internal Server Error", code: 500 });
+    }
+  });
+};
 
 function Account() {
-  let user = { details: null };
+  const navigate = useNavigate();
+  let user;
+  try {
+    user = JSON.parse(localStorage.getItem("user")) || { details: null };
+  } catch {
+    user = { details: null };
+  }
+
+  const token = localStorage.getItem("token");
+
+  if (!token) return <Navigate to={"/account/login"} />;
+
+  useEffect(() => {
+    console.clear();
+    POST_GET(token)
+      .then((res) => {
+        if (res.data) {
+          user = { ...res.data };
+          toast.success(res.message);
+          localStorage.setItem('user', JSON.stringify(user))
+        }
+      })
+      .catch((err) => {
+        if (err.code === 400) navigate("/account/login");
+        else toast.error(err.message);
+      }).finally(() => {
+        console.log(user)
+      });
+  }, []);
+
   return (
     <>
       <Toaster richColors />

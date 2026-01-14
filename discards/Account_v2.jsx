@@ -1,9 +1,9 @@
 import default_pic from "/default.png";
 import { useNavigate } from "react-router";
-import { useAuth } from "../datas/Authentications";
+import { useAuth } from "../front-end/src/datas/Authentications";
 import { toast, Toaster } from "sonner";
 import { useEffect, useState } from "react";
-import { useUser } from "../datas/User_data";
+import { useUser } from "../front-end/src/datas/User_data";
 
 const POST_GET = (token) => {
   return new Promise(async (resolve, reject) => {

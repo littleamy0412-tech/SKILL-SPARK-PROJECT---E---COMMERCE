@@ -6,7 +6,7 @@ import { HiOutlineSwitchHorizontal } from "react-icons/hi";
 import { IoPersonSharp } from "react-icons/io5";
 import { MdOutlineMailOutline } from "react-icons/md";
 import { useNavigate } from "react-router";
-import { useAuth } from "../datas/Authentications";
+import { useAuth } from "../front-end/src/datas/Authentications";
 
 const POST_LOGIN = (data) =>
   new Promise(async (resolve, reject) => {

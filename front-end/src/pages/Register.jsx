@@ -3,6 +3,63 @@ import { toast, Toaster } from "sonner";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router";
 
+const POST_REGISTER = (data) => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const response = await fetch("/api/user/create", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const res = await response.json();
+      resolve({
+        res,
+        response,
+      });
+    } catch (err) {
+      reject({ err });
+    }
+  });
+};
+
+const POST_LOGIN = (data) => {
+  return new Promise(async (resolve, reject) => {
+    try {
+      const { username, email, password } = data;
+      const result = { password };
+      if (username) result.username = username;
+      else if (email) result.email = email;
+
+      if (!result.username && !result.email) {
+        reject({
+          success: 0,
+          code: 400,
+          message: "Username or Email required 343",
+        });
+      }
+
+      console.log(result);
+
+      const response = await fetch("/api/user/login", {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(result),
+      });
+
+      const res = await response.json();
+      if (res.code === 404) reject(res);
+      if (!res.success) reject({ ...res, code: 400 });
+      resolve(res);
+    } catch (err) {
+      reject({ success: 0, code: 500, message: "Internal Server Error", err });
+    }
+  });
+};
 
 function Register() {
   const navigate = useNavigate();
@@ -17,7 +74,44 @@ function Register() {
     formState: { errors },
   } = useForm({ username: "", email: "", password: "" });
 
-  const onSubmit = (data) =>{}
+  const onSubmit = (data) => {
+    POST_REGISTER(data)
+      .then((result) => {
+        if (result.res.success) {
+          toast.success(result.res.message);
+          POST_LOGIN(data)
+            .then((report) => {
+              toast.success(report.message);
+              localStorage.setItem("token", report.token);
+              reset({ username: "", email: "", password: "" });
+              setTimeout(() => navigate("/account"), 2000);
+            })
+            .catch((err) => {
+              switch (err.code) {
+                case 400:
+                case 404:
+                  toast.warning(err.message);
+                  break;
+                case 500:
+                  console.log(err);
+                  toast.error(err.message);
+              }
+            });
+        }
+        if (result.res?.message?.startsWith("Duplicate")) {
+          const message = result.res.duplicate_key[0];
+          toast.warning(
+            message.charAt(0).toUpperCase() +
+              message.slice(1) +
+              " already in use."
+          );
+        }
+      })
+      .catch((err) => {
+        toast.error("Internal Server Error");
+        console.error("FAILED:", err.err);
+      });
+  };
 
   return (
     <>

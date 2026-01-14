@@ -3,15 +3,21 @@ import { createContext, useContext, useEffect, useState } from "react";
 const UserCont = createContext();
 
 export default function USERDATA({ children }) {
-  const [userData, setUserData] = useState({});
-
-  useEffect(() => {
+  const [userData, setUserData] = useState(() => {
     try {
-      setUserData(JSON.parse(localStorage.getItem("user_data")));
+      return JSON.parse(localStorage.getItem("user_data")) || {};
     } catch {
-      setUserData((prev) => prev);
+      return {};
     }
-  }, []);
+  });
+
+  // useEffect(() => {
+  //   try {
+  //     setUserData(JSON.parse(localStorage.getItem("user_data")));
+  //   } catch {
+  //     setUserData((prev) => prev);
+  //   }
+  // }, []);
 
   useEffect(() => {
     localStorage.setItem("user_data", JSON.stringify(userData));

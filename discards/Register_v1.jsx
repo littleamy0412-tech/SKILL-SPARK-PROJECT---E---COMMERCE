@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import { toast, Toaster } from "sonner";
 import { useForm } from "react-hook-form";
 import { useNavigate } from "react-router";
-import { useAuth } from "../datas/Authentications";
+import { useAuth } from "../front-end/src/datas/Authentications";
 
 const POST_REGISTER = (data) =>
   new Promise(async (resolve, reject) => {
