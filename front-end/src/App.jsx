@@ -4,6 +4,8 @@ import Home from "./pages/Home";
 import Account from "./pages/Account";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
+import Protected_Route from "./components/Protected_Route";
+import Account_v1 from "./pages/Account_v1";
 
 function App() {
   return (
@@ -11,8 +13,9 @@ function App() {
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="account">
+          <Route path="account" element={<Protected_Route />}>
             <Route index element={<Account />} />
+            <Route path="v1" element={<Account_v1 />} />
           </Route>
         </Route>
 

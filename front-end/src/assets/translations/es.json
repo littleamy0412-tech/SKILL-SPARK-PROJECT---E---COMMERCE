@@ -1,49 +1,118 @@
 {
+  "footer": {
+    "Contact Info": "Información de Contacto",
+    "titles": {
+      "Catagories": "Categorías",
+      "Customer Care": "Atención al Cliente",
+      "Pages": "Páginas"
+    },
+    "sections": {
+      "Laptops & Computers": "Portátiles y Computadoras",
+      "Cameras & Photography": "Cámaras y Fotografía",
+      "Smart Phones & Tablets": "Teléfonos Inteligentes y Tablets",
+      "Video Games & Consoles": "Videojuegos y Consolas",
+      "Waterproof Headphones": "Auriculares Impermeables",
+      "My Account": "Mi Cuenta",
+      "Discount": "Descuento",
+      "Returns": "Devoluciones",
+      "Orders History": "Historial de Pedidos",
+      "Order Tracking": "Seguimiento de Pedidos",
+      "Blog": "Blog",
+      "Browse the Shop": "Explorar la Tienda",
+      "Category": "Categoría",
+      "Pre-Built Pages": "Páginas Prediseñadas",
+      "Visual Composer Elements": "Elementos de Visual Composer",
+      "WooCommerce Pages": "Páginas de WooCommerce"
+    }
+  },
+  "bread": {
+    "my_account": "Mi Cuenta",
+    "loc": {
+      "home": "Inicio",
+      "pages": "Páginas",
+      "my_account": "Mi Cuenta"
+    }
+  },
   "header": {
     "top": {
       "undefined": "Indefinido",
-      "not_setted": "No establecido",
-      "login": "Iniciar sesión",
-      "wishlist": "Lista de deseos"
+      "not_setted": "No configurado",
+      "login": "Iniciar Sesión",
+      "wishlist": "Lista de Deseos"
+    },
+    "bottom": {
+      "nav": {
+        "home": "Inicio",
+        "blog": "Blog",
+        "shop": "Tienda",
+        "contact": "Contacto",
+        "about-us": "Sobre Nosotros"
+      },
+      "search": "Buscar"
     }
   },
   "page": {
     "account": {
-      "change_picture": "Cambiar imagen",
+      "undefined": "indefinido",
       "address": "Dirección",
       "country": "País",
       "city": "Ciudad",
       "street": "Calle",
-      "zip_code": "Código postal",
-      "account_info": "Información de la cuenta",
+      "zip_code": "Código Postal",
+      "account_info": "Información de la Cuenta",
+      "not_set": "No establecido",
+      "your_account": "Tu Cuenta",
       "info": {
-        "full_name": "Nombre completo",
-        "email": "Correo electrónico",
-        "bio": "Biografía",
-        "edit_bio": "Editar biografía",
-        "edit": "Editar"
+        "full_name": "Nombre Completo",
+        "email": "Correo Electrónico",
+        "phone_no": "Número de Teléfono",
+        "DOB": "Fecha de Nacimiento",
+        "gender": "Género",
+        "role": "Rol"
+      },
+      "list": {
+        "titles": {
+          "title_1": "Tus Pedidos",
+          "title_2": "Inicio de Sesión y Seguridad",
+          "title_3": "Tus Direcciones",
+          "title_4": "Tus Pagos",
+          "title_5": "Pedidos Archivados",
+          "title_6": "Tus Mensajes",
+          "title_7": "Servicio al Cliente",
+          "title_8": "Servicios Digitales y Soporte"
+        },
+        "descriptions": {
+          "description_1": "Rastrear, devolver o cancelar un pedido, descargar factura o volver a comprar",
+          "description_2": "Editar inicio de sesión, nombre y número de móvil",
+          "description_3": "Editar, eliminar o establecer dirección predeterminada",
+          "description_4": "Ver todas las transacciones, administrar métodos de pago y configuraciones",
+          "description_5": "Ver y administrar tus pedidos archivados",
+          "description_6": "Ver o responder mensajes de Amazon, vendedores y compradores",
+          "description_7": "Explorar opciones de autoservicio, artículos de ayuda o contactarnos",
+          "description_8": "Solucionar problemas del dispositivo, administrar o cancelar suscripciones digitales"
+        }
       },
       "register": {
         "title": "Registrarse",
         "description_1": "Por favor complete todos los datos a continuación",
-        "username": "Nombre de usuario",
-        "email": "Correo electrónico",
+        "username": "Nombre de Usuario",
+        "email": "Correo Electrónico",
         "password": "Contraseña",
-        "forgot_password": "¿Olvidó su contraseña?",
-        "description_2": "¿Ya tiene una cuenta?",
-        "login": "Iniciar sesión",
+        "forgot_password": "¿Olvidaste tu Contraseña?",
+        "description_2": "¿Ya tienes una cuenta?",
+        "login": "Iniciar Sesión",
         "submit": "Registrarse"
       },
       "login": {
-        "title": "Iniciar sesión",
+        "title": "Iniciar Sesión",
         "description_1": "Por favor complete todos los datos a continuación",
-        "username": "Nombre de usuario",
-        "email": "Correo electrónico",
+        "username": "Nombre de Usuario",
+        "email": "Correo Electrónico",
         "password": "Contraseña",
-        "forgot_password": "¿Olvidó su contraseña?",
-        "description_2": "¿No tiene una cuenta?",
+        "forgot_password": "¿Olvidaste tu Contraseña?",
+        "description_2": "¿No tienes una cuenta?",
         "register": "Registrarse",
-        "submit": "Iniciar sesión"
+        "submit": "Iniciar Sesión"
       }
     }
   }

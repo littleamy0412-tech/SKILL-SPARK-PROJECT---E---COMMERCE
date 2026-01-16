@@ -1,49 +1,118 @@
 {
+  "footer": {
+    "Contact Info": "Informations de Contact",
+    "titles": {
+      "Catagories": "Catégories",
+      "Customer Care": "Service Client",
+      "Pages": "Pages"
+    },
+    "sections": {
+      "Laptops & Computers": "Ordinateurs Portables et Ordinateurs",
+      "Cameras & Photography": "Appareils Photo et Photographie",
+      "Smart Phones & Tablets": "Smartphones et Tablettes",
+      "Video Games & Consoles": "Jeux Vidéo et Consoles",
+      "Waterproof Headphones": "Casques Étanches",
+      "My Account": "Mon Compte",
+      "Discount": "Réduction",
+      "Returns": "Retours",
+      "Orders History": "Historique des Commandes",
+      "Order Tracking": "Suivi de Commande",
+      "Blog": "Blog",
+      "Browse the Shop": "Parcourir la Boutique",
+      "Category": "Catégorie",
+      "Pre-Built Pages": "Pages Préconstruites",
+      "Visual Composer Elements": "Éléments Visual Composer",
+      "WooCommerce Pages": "Pages WooCommerce"
+    }
+  },
+  "bread": {
+    "my_account": "Mon Compte",
+    "loc": {
+      "home": "Accueil",
+      "pages": "Pages",
+      "my_account": "Mon Compte"
+    }
+  },
   "header": {
     "top": {
       "undefined": "Indéfini",
       "not_setted": "Non défini",
       "login": "Connexion",
-      "wishlist": "Liste de souhaits"
+      "wishlist": "Liste de Souhaits"
+    },
+    "bottom": {
+      "nav": {
+        "home": "Accueil",
+        "blog": "Blog",
+        "shop": "Boutique",
+        "contact": "Contact",
+        "about-us": "À Propos de Nous"
+      },
+      "search": "Rechercher"
     }
   },
   "page": {
     "account": {
-      "change_picture": "Changer la photo",
+      "undefined": "indéfini",
       "address": "Adresse",
       "country": "Pays",
       "city": "Ville",
       "street": "Rue",
-      "zip_code": "Code postal",
-      "account_info": "Informations du compte",
+      "zip_code": "Code Postal",
+      "account_info": "Informations du Compte",
+      "not_set": "Non défini",
+      "your_account": "Votre Compte",
       "info": {
-        "full_name": "Nom complet",
+        "full_name": "Nom Complet",
         "email": "E-mail",
-        "bio": "Biographie",
-        "edit_bio": "Modifier la biographie",
-        "edit": "Modifier"
+        "phone_no": "Numéro de Téléphone",
+        "DOB": "Date de Naissance",
+        "gender": "Genre",
+        "role": "Rôle"
+      },
+      "list": {
+        "titles": {
+          "title_1": "Vos Commandes",
+          "title_2": "Connexion et Sécurité",
+          "title_3": "Vos Adresses",
+          "title_4": "Vos Paiements",
+          "title_5": "Commandes Archivées",
+          "title_6": "Vos Messages",
+          "title_7": "Service Client",
+          "title_8": "Services Numériques et Assistance"
+        },
+        "descriptions": {
+          "description_1": "Suivre, retourner ou annuler une commande, télécharger la facture ou acheter à nouveau",
+          "description_2": "Modifier la connexion, le nom et le numéro de téléphone",
+          "description_3": "Modifier, supprimer ou définir l’adresse par défaut",
+          "description_4": "Voir toutes les transactions, gérer les moyens de paiement et les paramètres",
+          "description_5": "Voir et gérer vos commandes archivées",
+          "description_6": "Voir ou répondre aux messages d’Amazon, des vendeurs et des acheteurs",
+          "description_7": "Parcourir les options en libre-service, les articles d’aide ou nous contacter",
+          "description_8": "Dépanner les problèmes d’appareil, gérer ou annuler les abonnements numériques"
+        }
       },
       "register": {
-        "title": "Inscription",
+        "title": "S’inscrire",
         "description_1": "Veuillez remplir toutes les informations ci-dessous",
-        "username": "Nom d'utilisateur",
+        "username": "Nom d’Utilisateur",
         "email": "E-mail",
-        "password": "Mot de passe",
+        "password": "Mot de Passe",
         "forgot_password": "Mot de passe oublié ?",
         "description_2": "Vous avez déjà un compte ?",
         "login": "Connexion",
-        "submit": "S'inscrire"
+        "submit": "S’inscrire"
       },
       "login": {
         "title": "Connexion",
         "description_1": "Veuillez remplir toutes les informations ci-dessous",
-        "username": "Nom d'utilisateur",
+        "username": "Nom d’Utilisateur",
         "email": "E-mail",
-        "password": "Mot de passe",
+        "password": "Mot de Passe",
         "forgot_password": "Mot de passe oublié ?",
-        "description_2": "Vous n'avez pas de compte ?",
-        "register": "S'inscrire",
-        "submit": "Se connecter"
+        "description_2": "Vous n’avez pas de compte ?",
+        "register": "S’inscrire",
+        "submit": "Connexion"
       }
     }
   }

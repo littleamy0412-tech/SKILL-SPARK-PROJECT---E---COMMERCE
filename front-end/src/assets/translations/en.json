@@ -1,4 +1,30 @@
 {
+  "footer": {
+    "Contact Info": "Contact Info",
+    "titles": {
+      "Catagories": "Catagories",
+      "Customer Care": "Customer Care",
+      "Pages": "Pages"
+    },
+    "sections": {
+      "Laptops & Computers": "Laptops & Computers",
+      "Cameras & Photography": "Cameras & Photography",
+      "Smart Phones & Tablets": "Smart Phones & Tablets",
+      "Video Games & Consoles": "Video Games & Consoles",
+      "Waterproof Headphones": "Waterproof Headphones",
+      "My Account": "My Account",
+      "Discount": "Discount",
+      "Returns": "Returns",
+      "Orders History": "Orders History",
+      "Order Tracking": "Order Tracking",
+      "Blog": "Blog",
+      "Browse the Shop": "Browse the Shop",
+      "Category": "Category",
+      "Pre-Built Pages": "Pre-Built Pages",
+      "Visual Composer Elements": "Visual Composer Elements",
+      "WooCommerce Pages": "WooCommerce Pages"
+    }
+  },
   "bread": {
     "my_account": "My Account",
     "loc": {
@@ -14,23 +40,57 @@
       "login": "Login",
       "wishlist": "Wishlist"
     },
-    "bottom": {}
+    "bottom": {
+      "nav": {
+        "home": "Home",
+        "blog": "Blog",
+        "shop": "Shop",
+        "contact": "Contact",
+        "about-us": "About Us"
+      },
+      "search": "Search"
+    }
   },
   "page": {
     "account": {
-      "change_picture": "Change Picture",
+      "undefined": "undefined",
       "address": "Address",
       "country": "Country",
       "city": "City",
       "street": "Street",
       "zip_code": "Zip Code",
       "account_info": "Account Info",
+      "not_set": "Not Set",
+      "your_account": "Your Account",
       "info": {
         "full_name": "Full Name",
         "email": "Email",
-        "bio": "Bio",
-        "edit_bio": "Edit Bio",
-        "edit": "Edit"
+        "phone_no": "Phone No",
+        "DOB": "Date of Birth",
+        "gender": "Gender",
+        "role": "Role"
+      },
+      "list": {
+        "titles": {
+          "title_1": "Your Orders",
+          "title_2": "Login & Security",
+          "title_3": "Your Address",
+          "title_4": "Your Payments",
+          "title_5": "Archived Orders",
+          "title_6": "Your Messages",
+          "title_7": "Customer Service",
+          "title_8": "Digital Services & Support"
+        },
+        "descriptions": {
+          "description_1": "Track, return, cancel an order, download invoice or buy again",
+          "description_2": "Edit login, name and mobile number",
+          "description_3": "Edit, remove or set default address",
+          "description_4": "View all transactions, manage payment methods and settings",
+          "description_5": "View and manage your archived orders",
+          "description_6": "View or respond to messages from Amazon, sellers and buyers",
+          "description_7": "Browse self service options, help articles or contact us",
+          "description_8": "Troubleshoot device issues, manage or cancel digital subscription"
+        }
       },
       "register": {
         "title": "Register",

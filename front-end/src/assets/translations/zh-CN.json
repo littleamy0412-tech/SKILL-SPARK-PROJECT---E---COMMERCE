@@ -1,27 +1,96 @@
 {
+  "footer": {
+    "Contact Info": "联系信息",
+    "titles": {
+      "Catagories": "分类",
+      "Customer Care": "客户服务",
+      "Pages": "页面"
+    },
+    "sections": {
+      "Laptops & Computers": "笔记本电脑与台式电脑",
+      "Cameras & Photography": "相机与摄影",
+      "Smart Phones & Tablets": "智能手机与平板",
+      "Video Games & Consoles": "电子游戏与主机",
+      "Waterproof Headphones": "防水耳机",
+      "My Account": "我的账户",
+      "Discount": "折扣",
+      "Returns": "退货",
+      "Orders History": "订单历史",
+      "Order Tracking": "订单跟踪",
+      "Blog": "博客",
+      "Browse the Shop": "浏览商店",
+      "Category": "分类",
+      "Pre-Built Pages": "预建页面",
+      "Visual Composer Elements": "Visual Composer 元素",
+      "WooCommerce Pages": "WooCommerce 页面"
+    }
+  },
+  "bread": {
+    "my_account": "我的账户",
+    "loc": {
+      "home": "首页",
+      "pages": "页面",
+      "my_account": "我的账户"
+    }
+  },
   "header": {
     "top": {
       "undefined": "未定义",
       "not_setted": "未设置",
       "login": "登录",
       "wishlist": "心愿单"
+    },
+    "bottom": {
+      "nav": {
+        "home": "首页",
+        "blog": "博客",
+        "shop": "商店",
+        "contact": "联系我们",
+        "about-us": "关于我们"
+      },
+      "search": "搜索"
     }
   },
   "page": {
     "account": {
-      "change_picture": "更换头像",
+      "undefined": "未定义",
       "address": "地址",
       "country": "国家",
       "city": "城市",
       "street": "街道",
       "zip_code": "邮政编码",
       "account_info": "账户信息",
+      "not_set": "未设置",
+      "your_account": "您的账户",
       "info": {
         "full_name": "全名",
         "email": "电子邮箱",
-        "bio": "个人简介",
-        "edit_bio": "编辑简介",
-        "edit": "编辑"
+        "phone_no": "电话号码",
+        "DOB": "出生日期",
+        "gender": "性别",
+        "role": "角色"
+      },
+      "list": {
+        "titles": {
+          "title_1": "您的订单",
+          "title_2": "登录与安全",
+          "title_3": "您的地址",
+          "title_4": "您的支付方式",
+          "title_5": "已归档订单",
+          "title_6": "您的消息",
+          "title_7": "客户服务",
+          "title_8": "数字服务与支持"
+        },
+        "descriptions": {
+          "description_1": "跟踪、退货或取消订单，下载发票或再次购买",
+          "description_2": "编辑登录信息、姓名和手机号码",
+          "description_3": "编辑、删除或设置默认地址",
+          "description_4": "查看所有交易，管理支付方式和设置",
+          "description_5": "查看并管理已归档的订单",
+          "description_6": "查看或回复来自亚马逊、卖家和买家的消息",
+          "description_7": "浏览自助服务选项、帮助文章或联系我们",
+          "description_8": "排查设备问题，管理或取消数字订阅"
+        }
       },
       "register": {
         "title": "注册",
@@ -30,7 +99,7 @@
         "email": "电子邮箱",
         "password": "密码",
         "forgot_password": "忘记密码？",
-        "description_2": "已经有账号了？",
+        "description_2": "已经有账户了吗？",
         "login": "登录",
         "submit": "注册"
       },
@@ -41,7 +110,7 @@
         "email": "电子邮箱",
         "password": "密码",
         "forgot_password": "忘记密码？",
-        "description_2": "还没有账号？",
+        "description_2": "还没有账户？",
         "register": "注册",
         "submit": "登录"
       }

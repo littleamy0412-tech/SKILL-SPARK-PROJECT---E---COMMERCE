@@ -37,7 +37,7 @@ function Account() {
   const navigate = useNavigate();
   const [user, setUser] = useState({});
   useEffect(() => {
-    console.clear();
+    
     POST_GET(__.__t)
       .then((res) => {
         setUser(() => res.data);

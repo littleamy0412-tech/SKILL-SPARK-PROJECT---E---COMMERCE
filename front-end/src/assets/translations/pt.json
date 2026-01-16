@@ -1,0 +1,68 @@
+{
+  "bread": {
+    "my_account": "Minha Conta",
+    "loc": {
+      "home": "Início",
+      "pages": "Páginas",
+      "my_account": "Minha Conta"
+    }
+  },
+  "header": {
+    "top": {
+      "undefined": "Indefinido",
+      "not_setted": "Não configurado",
+      "login": "Entrar",
+      "wishlist": "Lista de Desejos"
+    },
+    "bottom": {
+      "nav": {
+        "home": "Início",
+        "blog": "Blog",
+        "shop": "Loja",
+        "contact": "Contato",
+        "about-us": "Sobre Nós"
+      },
+      "search": "Pesquisar"
+    }
+  },
+  "page": {
+    "account": {
+      "change_picture": "Alterar Imagem",
+      "address": "Endereço",
+      "country": "País",
+      "city": "Cidade",
+      "street": "Rua",
+      "zip_code": "CEP",
+      "account_info": "Informações da Conta",
+      "info": {
+        "full_name": "Nome Completo",
+        "email": "E-mail",
+        "bio": "Biografia",
+        "edit_bio": "Editar Biografia",
+        "edit": "Editar"
+      },
+      "register": {
+        "title": "Registrar",
+        "description_1": "Preencha todos os dados abaixo",
+        "username": "Nome de Usuário",
+        "email": "E-mail",
+        "password": "Senha",
+        "forgot_password": "Esqueceu a Senha?",
+        "description_2": "Já tem uma conta?",
+        "login": "Entrar",
+        "submit": "Registrar"
+      },
+      "login": {
+        "title": "Entrar",
+        "description_1": "Preencha todos os dados abaixo",
+        "username": "Nome de Usuário",
+        "email": "E-mail",
+        "password": "Senha",
+        "forgot_password": "Esqueceu a Senha?",
+        "description_2": "Não tem uma conta?",
+        "register": "Registrar",
+        "submit": "Entrar"
+      }
+    }
+  }
+}

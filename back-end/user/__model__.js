@@ -14,7 +14,7 @@ const userDetailsSchema = new Schema(
     },
     profile_pic: {
       type: String,
-      default: "/default.png",
+      default: false,
     },
     phone: {
       type: Number,

@@ -1,8 +1,11 @@
 import { Navigate, useNavigate } from "react-router";
-import default_pic from "/default.png";
 import { toast, Toaster } from "sonner";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+
+import Account_Data from "./datas/Account_datas";
+import { FiEdit } from "react-icons/fi";
+import { BsFillXDiamondFill } from "react-icons/bs";
 
 const POST_GET = (token) => {
   return new Promise(async (resolve, reject) => {
@@ -36,6 +39,11 @@ const POST_GET = (token) => {
 function Account() {
   const { t } = useTranslation();
 
+  const account_data = Account_Data();
+
+  console.clear();
+  console.log(account_data);
+
   function put(value) {
     return t(`page.account.${value}`);
   }
@@ -56,6 +64,8 @@ function Account() {
 
   if (!token) return <Navigate to={"/login"} />;
 
+  console.log(user);
+
   useEffect(() => {
     POST_GET(token)
       .then((res) => {
@@ -68,94 +78,155 @@ function Account() {
       .catch((err) => {
         if (err.code === 400) navigate("/login");
         else toast.error(err.message);
-      })
+      });
   }, []);
 
   return (
     <>
       <Toaster richColors />
-      <div className="bg-gray-300 py-[100px] flex items-center" id="imager091992u3">
-        <div className="h-170 w-full flex justify-center items-start gap-5 py-10 max-w-[1250px] m-auto rounded-[20px] shadow-lg px-[50px]">
-          <div className="flex-1 border border-gray-300 max-w-[300px] px-4 py-10 rounded shadow-lg bg-[rgba(255,255,255,.8)]">
-            <h1 className="text-[25px] font-bold text-purple-600">
-              {put("address")}:
-            </h1>
-            <ul className="list-disc flex flex-col gap-5 text-black px-3 mt-4">
-              <p className="flex justify-between">
-                <span className="font-bold flex gap-3">
-                  <span>{">"}</span>
-                  {put("country")}:
-                </span>
-                {user.details?.address?.country || ""}
-              </p>
-              <p className="flex justify-between">
-                <span className="font-bold flex gap-3">
-                  <span>{">"}</span>
-                  {put("city")}:
-                </span>
-                {user.details?.address?.city || ""}
-              </p>
-              <p className="flex justify-between">
-                <span className="font-bold flex gap-3">
-                  <span>{">"}</span>
-                  {put("street")}:
-                </span>
-                {user.details?.address?.street || ""}
-              </p>
-              <p className="flex justify-between">
-                <span className="font-bold flex gap-3">
-                  <span>{">"}</span>
-                  {put("zip_code")}:
-                </span>
-                {user.details?.address?.zipCode || ""}
-              </p>
-            </ul>
+      <div id="imager091992u3">
+        <div className="py-20 pt-30 max-w-[1000px] m-auto flex flex-col items-center gap-7">
+          {/* profile picture --- start */}
+          <div className="border-10 border-[rgba(200,200,200,.6)] h-[260px] w-[260px] rounded-full shadow-lg">
+            <img
+              src="/default.png"
+              alt="picture"
+              className="h-full w-full object-center object-cover"
+            />
           </div>
-          <div className="border border-gray-300 rounded-[10px] bg-gray-200 overflow-hidden shadow-2xl mt-[80px] h-[450px] w-[300px] flex flex-col justify-start pt-10 items-center gap-2">
-            <div className="w-[250px] h-[250px]">
-                <img src="/default.png" alt="profile" className="h-full w-full object-cover object-center rounded-full"/>
-            </div>
-            <p className="text-[18px] py-2 font-bold text-gray-600">{user.username || ''}</p>
-            <button className="bg-pink-500 text-white font-bold px-6 py-3 rounded cursor-pointer transition duration-200 hover:bg-pink-400">{put("change_picture")}</button>
-          </div>
-          <div className="flex-1 h-[500px] max-w-[500px]">
-            <h1 className="border-b-2 border-gray-500 font-bold text-white text-[28px] px-7 py-4 bg-purple-800">
-              {put("account_info")}:
-            </h1>
+          {/* profile picture --- end */}
 
-            <div className="flex flex-col py-10 items-center gap-3">
-              <div
-                id="item"
-                className="bg-[rgba(255,255,255,.8)] rounded border border-gray-500 text-xl h-20 w-full flex items-center px-10 text-gray-800 gap-3"
-              >
-                <span className="font-bold text-blue-950">
-                  <span className="text-xl">{">>"}</span> {putInfo("full_name")}
-                  :
-                </span>
-                {user.details?.fullName || ""}
-              </div>
-              <div
-                id="item"
-                className="bg-[rgba(255,255,255,.8)] rounded border border-gray-500 text-xl h-20 w-full flex items-center px-10 text-gray-800 gap-3"
-              >
-                <span className="font-bold text-blue-950">
-                  <span className="text-xl">{">>"}</span> {putInfo("email")}:
-                </span>
-                {user.email || ""}
-              </div>
-              <div
-                id="item"
-                className="bg-[rgba(255,255,255,.8)] rounded border border-gray-500 text-xl h-20 w-full flex items-center justify-between  px-10 text-gray-800 mt-20"
-              >
-                <span className="font-bold flex gap-3">
-                  <span className="text-xl">{"||"}</span> {putInfo("edit_bio")}:
-                </span>
-                <button className="bg-pink-500 text-white px-10 py-2 rounded font-bold text-[18px] transition duration-200 hover:bg-pink-400 cursor-pointer">
-                  {putInfo("edit")}
+          <p className="border border-[rgba(255,255,255,.6)] rounded shadow-lg cursor-pointer min-w-40 px-10 text-white font-bold text-center py-3 bg-[rgba(0,0,0,.5)]">
+            {user.username || "undefined"}
+          </p>
+
+          {/* Lines! -- start */}
+          <hr className="border-[rgba(255,255,255,.7)] rounded-full border-3 w-[80%]" />
+          <hr className="border-[rgba(255,255,255,.7)] rounded-full border-3 w-[60%]" />
+          <hr className="border-[rgba(255,255,255,.7)] rounded-full border-3 w-[40%]" />
+          {/* Lines! -- end */}
+
+          <div className="w-full flex gap-2 px-6 max-[930px]:flex-col">
+            <div className="flex-1 flex flex-col">
+              <h1 className="bg-pink-400 text-white font-bold text-2xl py-3 px-6 rounded-[4px] flex justify-between items-center">
+                {put("account_info")}
+                <button className="cursor-pointer">
+                  <FiEdit />
                 </button>
+              </h1>
+              <div className="max-[400px]:text-[12px] bg-[rgba(255,255,255,.7)] mx-2 flex flex-col gap-3 p-10 rounded-b-[10px] text-gray-800">
+                <p>
+                  <span className="font-bold min-w-[150px] inline-block">
+                    <b className="flex items-center gap-3">
+                      <BsFillXDiamondFill className="text-purple-400" />
+                      {putInfo("full_name")}:
+                    </b>
+                  </span>{" "}
+                  {user.info?.full_name || put("not_set")}
+                </p>
+                <p>
+                  <span className="font-bold min-w-[150px] inline-block">
+                    <b className="flex items-center gap-3">
+                      <BsFillXDiamondFill className="text-purple-400" />
+                      {putInfo("email")}:
+                    </b>
+                  </span>
+                  {user.email || put("not_set")}
+                </p>
+                <p>
+                  <span className="font-bold min-w-[150px] inline-block">
+                    <b className="flex items-center gap-3">
+                      <BsFillXDiamondFill className="text-purple-400" />
+                      {putInfo("phone_no")}:
+                    </b>
+                  </span>{" "}
+                  {user.info?.phone_no || put("not_set")}
+                </p>
+                <p>
+                  <span className="font-bold min-w-[150px] inline-block">
+                    <b className="flex items-center gap-3">
+                      <BsFillXDiamondFill className="text-purple-400" />
+                      {putInfo("DOB")}:
+                    </b>
+                  </span>{" "}
+                  {user.info?.date_of_birth || put("not_set")}
+                </p>
+                <p>
+                  <span className="font-bold min-w-[150px] inline-block">
+                    <b className="flex items-center gap-3">
+                      <BsFillXDiamondFill className="text-purple-400" />
+                      {putInfo("gender")}:
+                    </b>
+                  </span>{" "}
+                  {user.info?.gender || put("not_set")}
+                </p>
+                <p>
+                  <span className="font-bold min-w-[150px] inline-block">
+                    <b className="flex items-center gap-3">
+                      <BsFillXDiamondFill className="text-purple-400" />
+                      {putInfo("role")}:
+                    </b>
+                  </span>{" "}
+                  {user.role || put("not_set")}
+                </p>
               </div>
             </div>
+
+            {/* address -- start */}
+            <div className="w-[300px] max-[930px]:w-full flex flex-col gap-3 text-gray-600">
+              <h1 className="bg-purple-500 text-white py-3 px-6 font-bold text-2xl rounded-[4px] flex justify-between">
+                {put("address")}
+                <button className="cursor-pointer">
+                  <FiEdit />
+                </button>
+              </h1>
+              <div className="bg-[rgba(255,255,255,.8)] py-3 px-6 rounded-[4px] flex justify-between">
+                <span className="font-bold">{put("country")}:</span>
+                {user.details?.address?.country || put("not_set")}
+              </div>
+              <div className="bg-[rgba(255,255,255,.8)] py-3 px-6 rounded-[4px] flex justify-between">
+                <span className="font-bold">{put("city")}:</span>
+                {user.details?.address?.city || put("not_set")}
+              </div>
+              <div className="bg-[rgba(255,255,255,.8)] py-3 px-6 rounded-[4px] flex justify-between">
+                <span className="font-bold">{put("street")}:</span>
+                {user.details?.address?.street || put("not_set")}
+              </div>
+              <div className="bg-[rgba(255,255,255,.8)] py-3 px-6 rounded-[4px] flex justify-between">
+                <span className="font-bold">{put("zip_code")}:</span>
+                {user.details?.address?.zipCode || put("not_set")}
+              </div>
+            </div>
+            {/* address -- end */}
           </div>
+        </div>
+      </div>
+
+      <div className="py-10 bg-gray-200">
+        <h1 className="text-center max-w-[1700px] border-b-3 border-gray-300 m-auto py-5 mb-5 font-bold text-3xl text-blue-950">
+          {put("your_account")}
+        </h1>
+        <div className="py-10 grid grid-cols-4 max-[1388px]:grid-cols-3 max-[1078px]:grid-cols-2 max-[700px]:grid-cols-1 max-w-[1700px] m-auto auto-rows-auto px-10 gap-4">
+          {account_data.map((el) => (
+            <>
+              <div
+                id="item"
+                className="cursor-pointer transition duration-200 transform hover:translate-y-[-10px] shadow-lg bg-white hover:bg-gray-300 hover:brightness-110 border border-gray-300 overflow-hidden rounded-[4px] p-10 flex flex-col items-start gap-2"
+              >
+                <div className="border border-gray-100 overflow-hidden h-[60px] w-[60px] rounded-full">
+                  <img src={el.icon} alt="picture" />
+                </div>
+                <h1 className="text-xl pb-[10px] font-bold text-blue-950 border-b-4 border-pink-400 inline w-full">
+                  {t(`page.account.list.titles.${el.title}`)}
+                </h1>
+                <hr className="border-2 border-pink-400 w-[75%]" />
+                <hr className="border-2 w-[50%] border-pink-400" />
+                <p className="text-gray-500 mt-[10px]">
+                  {t(`page.account.list.descriptions.${el.description}`)}
+                </p>
+              </div>
+            </>
+          ))}
         </div>
       </div>
     </>

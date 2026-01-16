@@ -1,0 +1,119 @@
+{
+  "footer": {
+    "Contact Info": "פרטי קשר",
+    "titles": {
+      "Catagories": "קטגוריות",
+      "Customer Care": "שירות לקוחות",
+      "Pages": "דפים"
+    },
+    "sections": {
+      "Laptops & Computers": "מחשבים ניידים ומחשבים",
+      "Cameras & Photography": "מצלמות וצילום",
+      "Smart Phones & Tablets": "סמארטפונים וטאבלטים",
+      "Video Games & Consoles": "משחקי וידאו וקונסולות",
+      "Waterproof Headphones": "אוזניות עמידות במים",
+      "My Account": "החשבון שלי",
+      "Discount": "הנחה",
+      "Returns": "החזרים",
+      "Orders History": "היסטוריית הזמנות",
+      "Order Tracking": "מעקב הזמנות",
+      "Blog": "בלוג",
+      "Browse the Shop": "עיון בחנות",
+      "Category": "קטגוריה",
+      "Pre-Built Pages": "דפים מוכנים",
+      "Visual Composer Elements": "רכיבי קומפוזר חזותי",
+      "WooCommerce Pages": "דפי WooCommerce"
+    }
+  },
+  "bread": {
+    "my_account": "החשבון שלי",
+    "loc": {
+      "home": "בית",
+      "pages": "דפים",
+      "my_account": "החשבון שלי"
+    }
+  },
+  "header": {
+    "top": {
+      "undefined": "לא מוגדר",
+      "not_setted": "לא נקבע",
+      "login": "כניסה",
+      "wishlist": "רשימת משאלות"
+    },
+    "bottom": {
+      "nav": {
+        "home": "בית",
+        "blog": "בלוג",
+        "shop": "חנות",
+        "contact": "צור קשר",
+        "about-us": "עלינו"
+      },
+      "search": "חיפוש"
+    }
+  },
+  "page": {
+    "account": {
+      "undefined": "לא מוגדר",
+      "address": "כתובת",
+      "country": "מדינה",
+      "city": "עיר",
+      "street": "רחוב",
+      "zip_code": "מיקוד",
+      "account_info": "מידע על החשבון",
+      "not_set": "לא נקבע",
+      "your_account": "החשבון שלך",
+      "info": {
+        "full_name": "שם מלא",
+        "email": "אימייל",
+        "phone_no": "מספר טלפון",
+        "DOB": "תאריך לידה",
+        "gender": "מגדר",
+        "role": "תפקיד"
+      },
+      "list": {
+        "titles": {
+          "title_1": "הזמנות שלך",
+          "title_2": "כניסה ואבטחה",
+          "title_3": "כתובתך",
+          "title_4": "תשלומים שלך",
+          "title_5": "הזמנות ארכיון",
+          "title_6": "הודעות שלך",
+          "title_7": "שירות לקוחות",
+          "title_8": "שירותים דיגיטליים ותמיכה"
+        },
+        "descriptions": {
+          "description_1": "עקוב, החזר, בטל הזמנה, הורד חשבונית או קנה שוב",
+          "description_2": "ערוך כניסה, שם ומספר נייד",
+          "description_3": "ערוך, הסר או הגדר כתובת ברירת מחדל",
+          "description_4": "צפה בכל העסקאות, נהל אמצעי תשלום והגדרות",
+          "description_5": "צפה בניהול הזמנות ארכיון שלך",
+          "description_6": "צפה או הגיב להודעות מ-Amazon, מוכרים וקונים",
+          "description_7": "עיין באפשרויות שירות עצמי, מאמרי עזרה או צור קשר",
+          "description_8": "פתור בעיות במכשיר, נהל או בטל מנוי דיגיטלי"
+        }
+      },
+      "register": {
+        "title": "הרשם",
+        "description_1": "אנא מלא את כל הנתונים למטה",
+        "username": "שם משתמש",
+        "email": "אימייל",
+        "password": "סיסמה",
+        "forgot_password": "שכחת סיסמה?",
+        "description_2": "כבר יש לך חשבון?",
+        "login": "כניסה",
+        "submit": "הרשם"
+      },
+      "login": {
+        "title": "כניסה",
+        "description_1": "אנא מלא את כל הנתונים למטה",
+        "username": "שם משתמש",
+        "email": "אימייל",
+        "password": "סיסמה",
+        "forgot_password": "שכחת סיסמה?",
+        "description_2": "אין לך חשבון?",
+        "register": "הרשם",
+        "submit": "כניסה"
+      }
+    }
+  }
+}

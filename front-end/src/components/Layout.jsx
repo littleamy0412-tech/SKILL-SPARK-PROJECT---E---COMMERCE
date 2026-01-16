@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from "react-router";
 import Header from "./Header";
 import Bread from "./Bread";
+import Footer from "./Footer";
 
 function Layout() {
   return (
@@ -9,6 +10,7 @@ function Layout() {
       <Header />
       <Bread/>
       <Outlet />
+      <Footer/>
     </>
   );
 }

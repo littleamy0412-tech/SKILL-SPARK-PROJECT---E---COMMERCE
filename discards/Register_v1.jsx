@@ -29,7 +29,7 @@ const POST_REGISTER = (data) =>
 const POST_LOGIN = (data) =>
   new Promise(async (resolve, reject) => {
     try {
-      console.clear();
+      
       console.log(data);
       const { username, email, password } = data;
       const result = { password };
@@ -68,7 +68,7 @@ function Register() {
   const put = (value) => t(`page.account.register.${value}`);
   const { __, setToken, toggleLog } = useAuth();
 
-  console.clear();
+  
   console.log(__);
 
   const {

@@ -1,31 +1,100 @@
 {
+  "footer": {
+    "Contact Info": "Kontaktinformationen",
+    "titles": {
+      "Catagories": "Kategorien",
+      "Customer Care": "Kundenservice",
+      "Pages": "Seiten"
+    },
+    "sections": {
+      "Laptops & Computers": "Laptops & Computer",
+      "Cameras & Photography": "Kameras & Fotografie",
+      "Smart Phones & Tablets": "Smartphones & Tablets",
+      "Video Games & Consoles": "Videospiele & Konsolen",
+      "Waterproof Headphones": "Wasserdichte Kopfhörer",
+      "My Account": "Mein Konto",
+      "Discount": "Rabatt",
+      "Returns": "Rücksendungen",
+      "Orders History": "Bestellverlauf",
+      "Order Tracking": "Bestellverfolgung",
+      "Blog": "Blog",
+      "Browse the Shop": "Shop durchsuchen",
+      "Category": "Kategorie",
+      "Pre-Built Pages": "Vorgefertigte Seiten",
+      "Visual Composer Elements": "Visual Composer Elemente",
+      "WooCommerce Pages": "WooCommerce Seiten"
+    }
+  },
+  "bread": {
+    "my_account": "Mein Konto",
+    "loc": {
+      "home": "Startseite",
+      "pages": "Seiten",
+      "my_account": "Mein Konto"
+    }
+  },
   "header": {
     "top": {
-      "undefined": "Nicht definiert",
+      "undefined": "Undefiniert",
       "not_setted": "Nicht festgelegt",
       "login": "Anmelden",
       "wishlist": "Wunschliste"
+    },
+    "bottom": {
+      "nav": {
+        "home": "Startseite",
+        "blog": "Blog",
+        "shop": "Shop",
+        "contact": "Kontakt",
+        "about-us": "Über Uns"
+      },
+      "search": "Suchen"
     }
   },
   "page": {
     "account": {
-      "change_picture": "Bild ändern",
+      "undefined": "undefiniert",
       "address": "Adresse",
       "country": "Land",
       "city": "Stadt",
       "street": "Straße",
       "zip_code": "Postleitzahl",
       "account_info": "Kontoinformationen",
+      "not_set": "Nicht festgelegt",
+      "your_account": "Ihr Konto",
       "info": {
         "full_name": "Vollständiger Name",
         "email": "E-Mail",
-        "bio": "Biografie",
-        "edit_bio": "Biografie bearbeiten",
-        "edit": "Bearbeiten"
+        "phone_no": "Telefonnummer",
+        "DOB": "Geburtsdatum",
+        "gender": "Geschlecht",
+        "role": "Rolle"
+      },
+      "list": {
+        "titles": {
+          "title_1": "Ihre Bestellungen",
+          "title_2": "Anmeldung & Sicherheit",
+          "title_3": "Ihre Adressen",
+          "title_4": "Ihre Zahlungen",
+          "title_5": "Archivierte Bestellungen",
+          "title_6": "Ihre Nachrichten",
+          "title_7": "Kundenservice",
+          "title_8": "Digitale Dienste & Support"
+        },
+        "descriptions": {
+          "description_1": "Bestellung verfolgen, zurücksenden oder stornieren, Rechnung herunterladen oder erneut kaufen",
+          "description_2": "Anmeldedaten, Namen und Mobilnummer bearbeiten",
+          "description_3": "Adresse bearbeiten, entfernen oder als Standard festlegen",
+          "description_4": "Alle Transaktionen anzeigen, Zahlungsmethoden und Einstellungen verwalten",
+          "description_5": "Archivierte Bestellungen anzeigen und verwalten",
+          "description_6": "Nachrichten von Amazon, Verkäufern und Käufern anzeigen oder beantworten",
+          "description_7": "Self-Service-Optionen durchsuchen, Hilfeartikel lesen oder uns kontaktieren",
+          "description_8": "Geräteprobleme beheben, digitale Abonnements verwalten oder kündigen"
+        }
       },
       "register": {
         "title": "Registrieren",
-        "description_1": "Bitte füllen Sie alle untenstehenden Angaben aus",
+        "description_1": "Bitte füllen Sie alle untenstehenden Daten aus",
         "username": "Benutzername",
         "email": "E-Mail",
         "password": "Passwort",
@@ -36,12 +105,12 @@
       },
       "login": {
         "title": "Anmelden",
-        "description_1": "Bitte füllen Sie alle untenstehenden Angaben aus",
+        "description_1": "Bitte füllen Sie alle untenstehenden Daten aus",
         "username": "Benutzername",
         "email": "E-Mail",
         "password": "Passwort",
         "forgot_password": "Passwort vergessen?",
-        "description_2": "Sie haben noch kein Konto?",
+        "description_2": "Haben Sie noch kein Konto?",
         "register": "Registrieren",
         "submit": "Anmelden"
       }

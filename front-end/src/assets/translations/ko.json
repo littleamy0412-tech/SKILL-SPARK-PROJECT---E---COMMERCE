@@ -1,31 +1,100 @@
 {
+  "footer": {
+    "Contact Info": "연락처 정보",
+    "titles": {
+      "Catagories": "카테고리",
+      "Customer Care": "고객 지원",
+      "Pages": "페이지"
+    },
+    "sections": {
+      "Laptops & Computers": "노트북 & 컴퓨터",
+      "Cameras & Photography": "카메라 & 사진",
+      "Smart Phones & Tablets": "스마트폰 & 태블릿",
+      "Video Games & Consoles": "비디오 게임 & 콘솔",
+      "Waterproof Headphones": "방수 헤드폰",
+      "My Account": "내 계정",
+      "Discount": "할인",
+      "Returns": "반품",
+      "Orders History": "주문 내역",
+      "Order Tracking": "주문 추적",
+      "Blog": "블로그",
+      "Browse the Shop": "쇼핑몰 둘러보기",
+      "Category": "카테고리",
+      "Pre-Built Pages": "미리 만들어진 페이지",
+      "Visual Composer Elements": "비주얼 컴포저 요소",
+      "WooCommerce Pages": "우커머스 페이지"
+    }
+  },
+  "bread": {
+    "my_account": "내 계정",
+    "loc": {
+      "home": "홈",
+      "pages": "페이지",
+      "my_account": "내 계정"
+    }
+  },
   "header": {
     "top": {
       "undefined": "정의되지 않음",
       "not_setted": "설정되지 않음",
       "login": "로그인",
       "wishlist": "위시리스트"
+    },
+    "bottom": {
+      "nav": {
+        "home": "홈",
+        "blog": "블로그",
+        "shop": "쇼핑몰",
+        "contact": "문의하기",
+        "about-us": "회사 소개"
+      },
+      "search": "검색"
     }
   },
   "page": {
     "account": {
-      "change_picture": "사진 변경",
+      "undefined": "정의되지 않음",
       "address": "주소",
       "country": "국가",
       "city": "도시",
-      "street": "거리",
+      "street": "도로명/번지",
       "zip_code": "우편번호",
       "account_info": "계정 정보",
+      "not_set": "설정되지 않음",
+      "your_account": "내 계정",
       "info": {
         "full_name": "이름",
         "email": "이메일",
-        "bio": "자기소개",
-        "edit_bio": "자기소개 수정",
-        "edit": "수정"
+        "phone_no": "전화번호",
+        "DOB": "생년월일",
+        "gender": "성별",
+        "role": "역할"
+      },
+      "list": {
+        "titles": {
+          "title_1": "주문 내역",
+          "title_2": "로그인 및 보안",
+          "title_3": "주소 정보",
+          "title_4": "결제 수단",
+          "title_5": "보관된 주문",
+          "title_6": "메시지",
+          "title_7": "고객 서비스",
+          "title_8": "디지털 서비스 및 지원"
+        },
+        "descriptions": {
+          "description_1": "주문 추적, 반품, 취소, 청구서 다운로드 또는 재구매",
+          "description_2": "로그인, 이름 및 휴대폰 번호 편집",
+          "description_3": "주소 편집, 삭제 또는 기본 주소로 설정",
+          "description_4": "모든 거래 내역 보기, 결제 수단 및 설정 관리",
+          "description_5": "보관된 주문 보기 및 관리",
+          "description_6": "Amazon, 판매자 및 구매자의 메시지 보기 및 응답",
+          "description_7": "셀프 서비스 옵션, 도움말 기사 탐색 또는 문의하기",
+          "description_8": "장치 문제 해결, 디지털 구독 관리 또는 취소"
+        }
       },
       "register": {
         "title": "회원가입",
-        "description_1": "아래의 모든 정보를 입력해 주세요",
+        "description_1": "아래 모든 정보를 입력해 주세요",
         "username": "사용자 이름",
         "email": "이메일",
         "password": "비밀번호",
@@ -36,7 +105,7 @@
       },
       "login": {
         "title": "로그인",
-        "description_1": "아래의 모든 정보를 입력해 주세요",
+        "description_1": "아래 모든 정보를 입력해 주세요",
         "username": "사용자 이름",
         "email": "이메일",
         "password": "비밀번호",

@@ -1,0 +1,119 @@
+{
+  "footer": {
+    "Contact Info": "संपर्क जानकारी",
+    "titles": {
+      "Catagories": "श्रेणियाँ",
+      "Customer Care": "ग्राहक सेवा",
+      "Pages": "पृष्ठ"
+    },
+    "sections": {
+      "Laptops & Computers": "लैपटॉप और कंप्यूटर",
+      "Cameras & Photography": "कैमरे और फोटोग्राफी",
+      "Smart Phones & Tablets": "स्मार्टफोन और टैबलेट",
+      "Video Games & Consoles": "वीडियो गेम और कंसोल",
+      "Waterproof Headphones": "वॉटरप्रूफ हेडफोन",
+      "My Account": "मेरा खाता",
+      "Discount": "छूट",
+      "Returns": "रिटर्न",
+      "Orders History": "ऑर्डर का इतिहास",
+      "Order Tracking": "ऑर्डर ट्रैकिंग",
+      "Blog": "ब्लॉग",
+      "Browse the Shop": "दुकान ब्राउज़ करें",
+      "Category": "श्रेणी",
+      "Pre-Built Pages": "पूर्वनिर्मित पृष्ठ",
+      "Visual Composer Elements": "विजुअल कंपोज़र तत्व",
+      "WooCommerce Pages": "वूकॉमर्स पृष्ठ"
+    }
+  },
+  "bread": {
+    "my_account": "मेरा खाता",
+    "loc": {
+      "home": "होम",
+      "pages": "पृष्ठ",
+      "my_account": "मेरा खाता"
+    }
+  },
+  "header": {
+    "top": {
+      "undefined": "अपरिभाषित",
+      "not_setted": "सेट नहीं किया गया",
+      "login": "लॉगिन",
+      "wishlist": "इच्छा सूची"
+    },
+    "bottom": {
+      "nav": {
+        "home": "होम",
+        "blog": "ब्लॉग",
+        "shop": "दुकान",
+        "contact": "संपर्क करें",
+        "about-us": "हमारे बारे में"
+      },
+      "search": "खोज"
+    }
+  },
+  "page": {
+    "account": {
+      "undefined": "अपरिभाषित",
+      "address": "पता",
+      "country": "देश",
+      "city": "शहर",
+      "street": "सड़क",
+      "zip_code": "पिन कोड",
+      "account_info": "खाता जानकारी",
+      "not_set": "सेट नहीं किया गया",
+      "your_account": "आपका खाता",
+      "info": {
+        "full_name": "पूरा नाम",
+        "email": "ईमेल",
+        "phone_no": "फ़ोन नंबर",
+        "DOB": "जन्म तिथि",
+        "gender": "लिंग",
+        "role": "भूमिका"
+      },
+      "list": {
+        "titles": {
+          "title_1": "आपके ऑर्डर",
+          "title_2": "लॉगिन और सुरक्षा",
+          "title_3": "आपका पता",
+          "title_4": "आपके भुगतान",
+          "title_5": "संग्रहीत ऑर्डर",
+          "title_6": "आपके संदेश",
+          "title_7": "ग्राहक सेवा",
+          "title_8": "डिजिटल सेवाएँ और समर्थन"
+        },
+        "descriptions": {
+          "description_1": "ऑर्डर को ट्रैक, रिटर्न, रद्द करें, इनवॉइस डाउनलोड करें या फिर से खरीदें",
+          "description_2": "लॉगिन, नाम और मोबाइल नंबर संपादित करें",
+          "description_3": "पता संपादित करें, हटाएँ या डिफ़ॉल्ट सेट करें",
+          "description_4": "सभी लेनदेन देखें, भुगतान विधियों और सेटिंग्स को प्रबंधित करें",
+          "description_5": "संग्रहीत ऑर्डर देखें और प्रबंधित करें",
+          "description_6": "Amazon, विक्रेताओं और खरीदारों से संदेश देखें या उनका उत्तर दें",
+          "description_7": "सेल्फ-सर्विस विकल्प, सहायता लेख या हमसे संपर्क करें",
+          "description_8": "डिवाइस समस्याओं का समाधान करें, डिजिटल सदस्यता प्रबंधित या रद्द करें"
+        }
+      },
+      "register": {
+        "title": "रजिस्टर करें",
+        "description_1": "कृपया नीचे सभी डेटा भरें",
+        "username": "उपयोगकर्ता नाम",
+        "email": "ईमेल",
+        "password": "पासवर्ड",
+        "forgot_password": "पासवर्ड भूल गए?",
+        "description_2": "क्या पहले से खाता है?",
+        "login": "लॉगिन",
+        "submit": "रजिस्टर करें"
+      },
+      "login": {
+        "title": "लॉगिन",
+        "description_1": "कृपया नीचे सभी डेटा भरें",
+        "username": "उपयोगकर्ता नाम",
+        "email": "ईमेल",
+        "password": "पासवर्ड",
+        "forgot_password": "पासवर्ड भूल गए?",
+        "description_2": "खाता नहीं है?",
+        "register": "रजिस्टर करें",
+        "submit": "लॉगिन"
+      }
+    }
+  }
+}

@@ -58,7 +58,7 @@ function Login() {
 
 
   const onSubmit = (data) => {
-    console.clear()
+    
     POST_LOGIN(data)
       .then((report) => {
         toast.success(report.message);
@@ -173,7 +173,7 @@ function Login() {
             {put("description_2")}{" "}
             <span
               className="font-bold text-pink-500 transition duration-200 hover:text-pink-400 cursor-pointer"
-              onClick={() => navigate("/account/register")}
+              onClick={() => navigate("/register")}
             >
               {put("register")}
             </span>

@@ -11,7 +11,7 @@ import { useAuth } from "../front-end/src/datas/Authentications";
 const POST_LOGIN = (data) =>
   new Promise(async (resolve, reject) => {
     try {
-      console.clear();
+      
       console.log(data);
       const { username, email, password } = data;
       const result = { password };

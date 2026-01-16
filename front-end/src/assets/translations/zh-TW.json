@@ -1,27 +1,96 @@
 {
+  "footer": {
+    "Contact Info": "聯絡資訊",
+    "titles": {
+      "Catagories": "分類",
+      "Customer Care": "客戶服務",
+      "Pages": "頁面"
+    },
+    "sections": {
+      "Laptops & Computers": "筆記型電腦與桌上型電腦",
+      "Cameras & Photography": "相機與攝影",
+      "Smart Phones & Tablets": "智慧型手機與平板電腦",
+      "Video Games & Consoles": "電玩遊戲與主機",
+      "Waterproof Headphones": "防水耳機",
+      "My Account": "我的帳戶",
+      "Discount": "折扣",
+      "Returns": "退貨",
+      "Orders History": "訂單紀錄",
+      "Order Tracking": "訂單追蹤",
+      "Blog": "部落格",
+      "Browse the Shop": "瀏覽商店",
+      "Category": "分類",
+      "Pre-Built Pages": "預建頁面",
+      "Visual Composer Elements": "Visual Composer 元素",
+      "WooCommerce Pages": "WooCommerce 頁面"
+    }
+  },
+  "bread": {
+    "my_account": "我的帳戶",
+    "loc": {
+      "home": "首頁",
+      "pages": "頁面",
+      "my_account": "我的帳戶"
+    }
+  },
   "header": {
     "top": {
       "undefined": "未定義",
       "not_setted": "未設定",
       "login": "登入",
       "wishlist": "願望清單"
+    },
+    "bottom": {
+      "nav": {
+        "home": "首頁",
+        "blog": "部落格",
+        "shop": "商店",
+        "contact": "聯絡我們",
+        "about-us": "關於我們"
+      },
+      "search": "搜尋"
     }
   },
   "page": {
     "account": {
-      "change_picture": "更換頭像",
+      "undefined": "未定義",
       "address": "地址",
       "country": "國家",
       "city": "城市",
       "street": "街道",
       "zip_code": "郵遞區號",
       "account_info": "帳戶資訊",
+      "not_set": "未設定",
+      "your_account": "您的帳戶",
       "info": {
         "full_name": "全名",
         "email": "電子郵件",
-        "bio": "個人簡介",
-        "edit_bio": "編輯簡介",
-        "edit": "編輯"
+        "phone_no": "電話號碼",
+        "DOB": "出生日期",
+        "gender": "性別",
+        "role": "角色"
+      },
+      "list": {
+        "titles": {
+          "title_1": "您的訂單",
+          "title_2": "登入與安全",
+          "title_3": "您的地址",
+          "title_4": "您的付款方式",
+          "title_5": "封存的訂單",
+          "title_6": "您的訊息",
+          "title_7": "客戶服務",
+          "title_8": "數位服務與支援"
+        },
+        "descriptions": {
+          "description_1": "追蹤、退貨或取消訂單，下載發票或再次購買",
+          "description_2": "編輯登入資訊、姓名與手機號碼",
+          "description_3": "編輯、刪除或設定預設地址",
+          "description_4": "查看所有交易，管理付款方式與設定",
+          "description_5": "查看並管理已封存的訂單",
+          "description_6": "查看或回覆來自 Amazon、賣家與買家的訊息",
+          "description_7": "瀏覽自助服務選項、說明文章或聯絡我們",
+          "description_8": "排除裝置問題，管理或取消數位訂閱"
+        }
       },
       "register": {
         "title": "註冊",
@@ -30,7 +99,7 @@
         "email": "電子郵件",
         "password": "密碼",
         "forgot_password": "忘記密碼？",
-        "description_2": "已經有帳戶了？",
+        "description_2": "已經有帳戶了嗎？",
         "login": "登入",
         "submit": "註冊"
       },

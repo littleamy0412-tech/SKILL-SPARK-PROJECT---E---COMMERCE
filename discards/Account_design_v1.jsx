@@ -57,7 +57,7 @@ function Account() {
   if (!token) return <Navigate to={"/login"} />;
 
   useEffect(() => {
-    console.clear();
+    
     POST_GET(token)
       .then((res) => {
         if (res.data) {
@@ -79,7 +79,7 @@ function Account() {
     <>
       <Toaster richColors />
       <div id="imager091992u3">
-        <div className="min-h-[600px] p-1 flex gap-5 px-10 py-10 max-w-[1200px] m-auto">
+        <div className="min-h-[600px] p-1 flex gap-5 px-10 py-10 max-w-[1700px] m-auto">
           <div className="min-w-[300px] flex flex-col gap-5">
             <div className="border rounded-[10px] border-white shadow-lg bg-[rgba(200,200,200,.3)] backdrop-blur-sm min-h-[400px] py-10">
               <div className="h-[300px] m-2 rounded-full">
@@ -150,7 +150,7 @@ function Account() {
       </div>
 
       <div id="fixer" className="bg-gray-100">
-        <div className="min-h-[50svh] bg-gray-100 grid grid-cols-2 auto-rows-[100px] gap-5 px-5 py-10  max-w-[1200px] m-auto">
+        <div className="min-h-[50svh] bg-gray-100 grid grid-cols-2 auto-rows-[100px] gap-5 px-5 py-10  max-w-[1700px] m-auto">
           <div
             id="item"
             className="text-gray-600 border border-gray-300 shadow-lg rounded flex items-center px-6 transform transition duration-200 hover:-translate-y-2 brightness-95 hover:brightness-100 cursor-pointer"

@@ -1,0 +1,119 @@
+{
+  "footer": {
+    "Contact Info": "معلومات الاتصال",
+    "titles": {
+      "Catagories": "الفئات",
+      "Customer Care": "خدمة العملاء",
+      "Pages": "الصفحات"
+    },
+    "sections": {
+      "Laptops & Computers": "أجهزة الكمبيوتر المحمولة والمكتبية",
+      "Cameras & Photography": "الكاميرات والتصوير",
+      "Smart Phones & Tablets": "الهواتف الذكية والأجهزة اللوحية",
+      "Video Games & Consoles": "ألعاب الفيديو وأجهزة التحكم",
+      "Waterproof Headphones": "سماعات مقاومة للماء",
+      "My Account": "حسابي",
+      "Discount": "خصم",
+      "Returns": "الإرجاع",
+      "Orders History": "تاريخ الطلبات",
+      "Order Tracking": "تتبع الطلب",
+      "Blog": "المدونة",
+      "Browse the Shop": "تصفح المتجر",
+      "Category": "الفئة",
+      "Pre-Built Pages": "صفحات جاهزة",
+      "Visual Composer Elements": "عناصر مُنشئ الصفحات",
+      "WooCommerce Pages": "صفحات ووكومرس"
+    }
+  },
+  "bread": {
+    "my_account": "حسابي",
+    "loc": {
+      "home": "الرئيسية",
+      "pages": "الصفحات",
+      "my_account": "حسابي"
+    }
+  },
+  "header": {
+    "top": {
+      "undefined": "غير معرف",
+      "not_setted": "غير مضبوط",
+      "login": "تسجيل الدخول",
+      "wishlist": "قائمة الأمنيات"
+    },
+    "bottom": {
+      "nav": {
+        "home": "الرئيسية",
+        "blog": "المدونة",
+        "shop": "المتجر",
+        "contact": "اتصل بنا",
+        "about-us": "من نحن"
+      },
+      "search": "بحث"
+    }
+  },
+  "page": {
+    "account": {
+      "undefined": "غير معرف",
+      "address": "العنوان",
+      "country": "البلد",
+      "city": "المدينة",
+      "street": "الشارع",
+      "zip_code": "الرمز البريدي",
+      "account_info": "معلومات الحساب",
+      "not_set": "غير مضبوط",
+      "your_account": "حسابك",
+      "info": {
+        "full_name": "الاسم الكامل",
+        "email": "البريد الإلكتروني",
+        "phone_no": "رقم الهاتف",
+        "DOB": "تاريخ الميلاد",
+        "gender": "الجنس",
+        "role": "الدور"
+      },
+      "list": {
+        "titles": {
+          "title_1": "طلباتي",
+          "title_2": "تسجيل الدخول والأمان",
+          "title_3": "عناويني",
+          "title_4": "طرق الدفع",
+          "title_5": "الطلبات المؤرشفة",
+          "title_6": "رسائلك",
+          "title_7": "خدمة العملاء",
+          "title_8": "الخدمات والدعم الرقمي"
+        },
+        "descriptions": {
+          "description_1": "تتبع الطلب، الإرجاع، الإلغاء، تحميل الفاتورة أو الشراء مرة أخرى",
+          "description_2": "تحرير تسجيل الدخول، الاسم ورقم الهاتف",
+          "description_3": "تحرير أو إزالة أو تعيين العنوان الافتراضي",
+          "description_4": "عرض جميع المعاملات، إدارة طرق الدفع والإعدادات",
+          "description_5": "عرض وإدارة الطلبات المؤرشفة",
+          "description_6": "عرض أو الرد على الرسائل من أمازون، البائعين والمشترين",
+          "description_7": "تصفح خيارات الخدمة الذاتية، مقالات المساعدة أو الاتصال بنا",
+          "description_8": "حل مشاكل الجهاز، إدارة أو إلغاء الاشتراك الرقمي"
+        }
+      },
+      "register": {
+        "title": "التسجيل",
+        "description_1": "يرجى تعبئة جميع البيانات أدناه",
+        "username": "اسم المستخدم",
+        "email": "البريد الإلكتروني",
+        "password": "كلمة المرور",
+        "forgot_password": "نسيت كلمة المرور؟",
+        "description_2": "هل لديك حساب بالفعل؟",
+        "login": "تسجيل الدخول",
+        "submit": "التسجيل"
+      },
+      "login": {
+        "title": "تسجيل الدخول",
+        "description_1": "يرجى تعبئة جميع البيانات أدناه",
+        "username": "اسم المستخدم",
+        "email": "البريد الإلكتروني",
+        "password": "كلمة المرور",
+        "forgot_password": "نسيت كلمة المرور؟",
+        "description_2": "ليس لديك حساب؟",
+        "register": "التسجيل",
+        "submit": "تسجيل الدخول"
+      }
+    }
+  }
+}

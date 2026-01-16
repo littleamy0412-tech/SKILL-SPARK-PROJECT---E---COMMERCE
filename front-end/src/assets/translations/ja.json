@@ -1,48 +1,117 @@
 {
+  "footer": {
+    "Contact Info": "連絡先情報",
+    "titles": {
+      "Catagories": "カテゴリー",
+      "Customer Care": "カスタマーサポート",
+      "Pages": "ページ"
+    },
+    "sections": {
+      "Laptops & Computers": "ノートパソコン・コンピューター",
+      "Cameras & Photography": "カメラ・写真",
+      "Smart Phones & Tablets": "スマートフォン・タブレット",
+      "Video Games & Consoles": "ビデオゲーム・コンソール",
+      "Waterproof Headphones": "防水ヘッドホン",
+      "My Account": "マイアカウント",
+      "Discount": "割引",
+      "Returns": "返品",
+      "Orders History": "注文履歴",
+      "Order Tracking": "注文追跡",
+      "Blog": "ブログ",
+      "Browse the Shop": "ショップを見る",
+      "Category": "カテゴリー",
+      "Pre-Built Pages": "プリビルトページ",
+      "Visual Composer Elements": "Visual Composer 要素",
+      "WooCommerce Pages": "WooCommerce ページ"
+    }
+  },
+  "bread": {
+    "my_account": "マイアカウント",
+    "loc": {
+      "home": "ホーム",
+      "pages": "ページ",
+      "my_account": "マイアカウント"
+    }
+  },
   "header": {
     "top": {
       "undefined": "未定義",
       "not_setted": "未設定",
       "login": "ログイン",
       "wishlist": "ウィッシュリスト"
+    },
+    "bottom": {
+      "nav": {
+        "home": "ホーム",
+        "blog": "ブログ",
+        "shop": "ショップ",
+        "contact": "お問い合わせ",
+        "about-us": "会社概要"
+      },
+      "search": "検索"
     }
   },
   "page": {
     "account": {
-      "change_picture": "画像を変更",
+      "undefined": "未定義",
       "address": "住所",
       "country": "国",
       "city": "市区町村",
-      "street": "番地",
+      "street": "番地・通り",
       "zip_code": "郵便番号",
       "account_info": "アカウント情報",
+      "not_set": "未設定",
+      "your_account": "あなたのアカウント",
       "info": {
         "full_name": "氏名",
         "email": "メールアドレス",
-        "bio": "自己紹介",
-        "edit_bio": "自己紹介を編集",
-        "edit": "編集"
+        "phone_no": "電話番号",
+        "DOB": "生年月日",
+        "gender": "性別",
+        "role": "役割"
+      },
+      "list": {
+        "titles": {
+          "title_1": "ご注文",
+          "title_2": "ログインとセキュリティ",
+          "title_3": "住所情報",
+          "title_4": "お支払い方法",
+          "title_5": "アーカイブされた注文",
+          "title_6": "メッセージ",
+          "title_7": "カスタマーサービス",
+          "title_8": "デジタルサービスとサポート"
+        },
+        "descriptions": {
+          "description_1": "注文の追跡、返品、キャンセル、請求書のダウンロード、再購入",
+          "description_2": "ログイン情報、氏名、携帯番号の編集",
+          "description_3": "住所の編集、削除、または既定として設定",
+          "description_4": "すべての取引を確認し、支払い方法や設定を管理",
+          "description_5": "アーカイブされた注文の表示と管理",
+          "description_6": "Amazon、販売者、購入者からのメッセージを確認・返信",
+          "description_7": "セルフサービスオプションやヘルプ記事の閲覧、またはお問い合わせ",
+          "description_8": "デバイスの問題解決、デジタルサブスクリプションの管理または解約"
+        }
       },
       "register": {
-        "title": "登録",
-        "description_1": "以下のすべての項目を入力してください",
+        "title": "新規登録",
+        "description_1": "以下のすべての項目をご入力ください",
         "username": "ユーザー名",
         "email": "メールアドレス",
         "password": "パスワード",
-        "forgot_password": "パスワードを忘れましたか？",
+        "forgot_password": "パスワードをお忘れですか？",
         "description_2": "すでにアカウントをお持ちですか？",
         "login": "ログイン",
         "submit": "登録"
       },
       "login": {
         "title": "ログイン",
-        "description_1": "以下のすべての項目を入力してください",
+        "description_1": "以下のすべての項目をご入力ください",
         "username": "ユーザー名",
         "email": "メールアドレス",
         "password": "パスワード",
-        "forgot_password": "パスワードを忘れましたか？",
-        "description_2": "アカウントをお持ちでないですか？",
-        "register": "登録",
+        "forgot_password": "パスワードをお忘れですか？",
+        "description_2": "アカウントをお持ちではありませんか？",
+        "register": "新規登録",
         "submit": "ログイン"
       }
     }
