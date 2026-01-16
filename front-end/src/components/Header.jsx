@@ -3,15 +3,16 @@ import { FiPhoneCall } from "react-icons/fi";
 import { VscMail } from "react-icons/vsc";
 import Header_Data from "./header/Header_Data";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { RxHamburgerMenu } from "react-icons/rx";
 
 function Header() {
   const { t, i18n } = useTranslation();
+  const navigate = useNavigate();
 
   useEffect(() => {
-    i18n.changeLanguage(localStorage.getItem('language') || 'en')
-  }, [])
+    i18n.changeLanguage(localStorage.getItem("language") || "en");
+  }, []);
 
   function putTop(value) {
     return t(`header.top.${value}`);
@@ -25,7 +26,7 @@ function Header() {
     try {
       return JSON.parse(localStorage.getItem("user")) || {};
     } catch {
-      return ({});
+      return {};
     }
   });
 
@@ -38,7 +39,10 @@ function Header() {
         <select
           name={_id}
           id={_id}
-          onChange={(e) => {i18n.changeLanguage(e.target.value); localStorage.setItem('language', e.target.value)}}
+          onChange={(e) => {
+            i18n.changeLanguage(e.target.value);
+            localStorage.setItem("language", e.target.value);
+          }}
           value={i18n.language}
           className="px-4 transition duration-200 hover:bg-purple-400"
         >
@@ -72,7 +76,7 @@ function Header() {
   }
 
   function Button({ data }) {
-    const { _id, text, icon_p, icon_s, img: image } = data;
+    const { _id, text, icon_p, icon_s, path, img: image } = data;
     const [hide] = useState(() => {
       if (localStorage.getItem("token") && _id === "login-btnPopup")
         return true;
@@ -91,11 +95,16 @@ function Header() {
           `}
           onMouseEnter={() => setIsHover(true)}
           onMouseLeave={() => setIsHover(false)}
+          onClick={() => navigate(path)}
         >
           {image ? (
             <>
               <img
-                src={`${(user.details?.profile_pic === 'false' ? "/default.png" : user.details?.profile_pic) || "/default.png"}`}
+                src={`${
+                  (user.details?.profile_pic === "false"
+                    ? "/default.png"
+                    : user.details?.profile_pic) || "/default.png"
+                }`}
                 alt="profile"
                 className="h-full w-full object-cover object-center"
               />
@@ -112,7 +121,10 @@ function Header() {
 
   return (
     <header>
-      <div id="fixer" className="hidden min-[1446px]:flex bg-purple-500 text-white font-bold">
+      <div
+        id="fixer"
+        className="hidden min-[1446px]:flex bg-purple-500 text-white font-bold"
+      >
         <div className="h-[65px] w-[80%] max-w-[1700px] m-auto flex">
           {/* top-left -- start */}
           <div id="contact" className="flex">
@@ -147,7 +159,10 @@ function Header() {
               className="w-full object-cover"
             />
           </div>
-          <nav id="navigation" className="text-gray-500 hidden min-[1082px]:flex">
+          <nav
+            id="navigation"
+            className="text-gray-500 hidden min-[1082px]:flex"
+          >
             {headerData.bottom.nav.map((el) => {
               return (
                 <>
@@ -172,7 +187,7 @@ function Header() {
             </button>
           </div>
           <div className="w-[80px] justify-center cursor-pointer items-center text-[40px] transition duration-200 hover:bg-gray-100 hidden max-[1446px]:flex">
-            <RxHamburgerMenu/>
+            <RxHamburgerMenu />
           </div>
         </div>
       </div>

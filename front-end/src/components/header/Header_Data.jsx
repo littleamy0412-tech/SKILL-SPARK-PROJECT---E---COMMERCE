@@ -9,12 +9,13 @@ import { BiSearch } from "react-icons/bi";
 import logo from "/logo.png";
 
 class Button {
-  constructor(_id, text, icon_p, icon_s = "", img = false) {
+  constructor(_id, text, icon_p, icon_s = "", path, img = false) {
     this._id = _id;
     this.text = text;
     this.icon_p = icon_p;
     this.icon_s = icon_s;
     this.img = img;
+    this.path = path
   }
 }
 
@@ -32,10 +33,10 @@ export default function Header_Data() {
         },
       ],
       button: [
-        new Button("login-btnPopup", "login", <IoMdPerson />),
-        new Button("account-btn", "", "", "", true),
-        new Button("wishlist-btn", "wishlist", <FaRegHeart />, <FaHeart />),
-        new Button("cart-btn", "", <BsCart />, <BsCartFill />),
+        new Button("login-btnPopup", "login", <IoMdPerson />, "", '/login'),
+        new Button("account-btn", "", "", "", '/account', true),
+        new Button("wishlist-btn", "wishlist", <FaRegHeart />, <FaHeart />, '/wishlist'),
+        new Button("cart-btn", "", <BsCart />, <BsCartFill />, '/cart'),
       ],
     },
     bottom: {
